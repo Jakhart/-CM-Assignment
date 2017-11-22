@@ -13,8 +13,24 @@ public:
     double Tsun; //Surface temperature 300°F inthe Assigment
     double dt;
     double dx;
+    double r;
 
     Solve(double D, double Tin, double Tsun, double dt, double dx);
 
     virtual void solve();
+
+    double getD();
+    void setD(double D);
+
+    double getTin();
+    void setTin(double Tin);
+    
+    double getTsun();
+    void setTsun(double Tsun);
+    
+    double getdt();
+    void setdt(double dt);
+    
+    double getdx();
+    void setdx(double dx);
 };

@@ -6,11 +6,9 @@
 
 class Explicit : public Solve {
 public:
-    Explicit();
-
     Explicit(double D, double Tin, double Tsun, double dt, double dx);
 
-    solve();
+    void solve();
 
-    OrderOne();
+    void OrderOne(double T[]);
 };

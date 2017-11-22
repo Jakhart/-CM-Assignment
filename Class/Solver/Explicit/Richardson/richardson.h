@@ -1,4 +1,4 @@
-double D, double Tin, double Tsun, double dt, double dx#include <iostream>  //generic IO
+#include <iostream>  //generic IO
 #include <fstream>   //file IO
 #include <stdexcept> //provides exception
 
