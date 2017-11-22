@@ -1,16 +1,17 @@
 #include "Class/Solver/Explicit/explicit.h"
+#include<string>
 
-Explicit::Explicit(double D, double Tin, double Tsun, double dt, double dx) : Solve::Solve()
+Explicit::Explicit(double D, double Tin, double Tsun, double dt, double dx) : Solve::Solve(D, Tin, Tsun, dt, dx)
 {
 }
 
-void solve() {}
+void Explicit::solve() {}
 
-void Orderone(double T[])
+void Explicit::OrderOne(std::vector<double> T)
 {
-    r = this.D * this.dt / (this.dx * this.dx);
-    for (int i = 0; i < length(T); i++)
+    double r = this->D * this->dt / (this->dx * this->dx);
+    for (int i = 0; i < T.size(); i++)
     {
-        T[i] = r * this.Tin + this.Tin + (1 - 2 * r) * this.Tin;
+        T[i] = r * this->Tin + this->Tin + (1 - 2 * r) * this->Tin;
     }
 }

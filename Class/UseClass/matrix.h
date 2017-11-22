@@ -4,6 +4,7 @@
 #include <iostream>  //generic IO
 #include <fstream>   //file IO
 #include <stdexcept> //provides exceptions
+#include <math.h>
 #include "Class/UseClass/vector.h" //we use Vector in Matrix code
 
 

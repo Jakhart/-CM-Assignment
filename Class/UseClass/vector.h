@@ -4,6 +4,7 @@
 #include <iostream> //Generic IO operations
 #include <fstream>  //File IO operations
 #include <stdexcept> //provides exceptions
+#include <math.h>
 #include <vector>  // std vector upon which our Vector is based
 
 

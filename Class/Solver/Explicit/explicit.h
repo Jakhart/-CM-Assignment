@@ -2,7 +2,7 @@
 #include <fstream>   //file IO
 #include <stdexcept> //provides exception
 
-#include "Class/Solver/solve.h"
+#include "class/Solver/solve.h"
 
 class Explicit : public Solve {
 public:
@@ -10,5 +10,5 @@ public:
 
     void solve();
 
-    void OrderOne(double T[]);
+    void OrderOne(std::vector<double> T);
 };

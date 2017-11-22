@@ -1,5 +1,12 @@
 #include "Class/UseClass/vector.h"
 
+#include <iostream> //Generic IO operations
+#include <fstream>  //File IO operations
+#include <stdexcept> //provides exceptions
+#include <vector>  // std vector upon which our Vector is based
+using namespace std;
+
+
 // CONSTRUCTORS
 /*=
 * Default constructor (empty vector)
@@ -108,84 +115,4 @@ double Vector::uniform_norm() const
 		if (fabs((*this)[i]) > max) max = fabs((*this)[i]);
 
 	return max;
-}
-
-
-// INPUT AND OUTPUT
-/*
-* keyboard input , user friendly
-*/
-std::istream& operator>>(std::istream& is, Vector& v)
-{
-	if (!v.size()) {
-		int n;
-
-		std::cout << "input the size for the vector" << std::endl;
-		is >> n;
-		//check input sanity
-		if(n < 0) throw std::invalid_argument("read error - negative vector size");
-
-		// prepare the vector to hold n elements
-		v = Vector(n);
-	}
-	// input the elements
-	std::cout << "input "<< v.size() <<" vector elements" << std::endl;
-	std::size_t i;
-	for (i=0; i<v.size(); i++) is >> v[i];
-
-    // return the stream object
-    return is;
-}
-
-/*
-* file input - raw data, compatible with file writing operator
-*/
-std::ifstream& operator>>(std::ifstream& ifs, Vector& v) 
-{
-    int n;
-
-    // read size from the file
-    ifs >> n;
-    //check input sanity
-    if(n < 0) throw std::invalid_argument("file read error - negative vector size");
-
-    // prepare the vector to hold n elements
-    v = Vector(n);
-
-    // input the elements
-    for (int i=0; i<n; i++) ifs >> v[i];
-
-    // return the stream object
-    return ifs;
-}
-
-/*
-* screen output, user friendly
-*/
-std::ostream& operator<<(std::ostream& os, const Vector& v)
-{
-    if (v.size() > 0) {
-		std::size_t i;
-        for (i=0; i<v.size(); i++) os << v[i]  << " ";
-        os << std::endl;
-    }
-    else
-    {
-        os << "Vector is empty." << std::endl;
-    }
-    return os;
-}
-
-/*
-* file output - raw data, comaptible with file reading operator
-*/
-std::ofstream& operator<<(std::ofstream& ofs, const Vector& v)
-{
-    //put vector size in first line (even if it is zero)
-    ofs << v.size() << std::endl;
-    //put data in second line (if size==zero nothing will be put)
-	std::size_t i;
-    for (i=0; i<v.size(); i++) ofs << v[i]  <<  " ";
-    ofs << std::endl;
-    return ofs;
 }

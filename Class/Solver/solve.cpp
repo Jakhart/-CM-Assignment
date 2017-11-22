@@ -1,4 +1,4 @@
-#include "Class/Solver/Solve.h"
+#include "Class/Solver/solve.h"
 
 //CONSTRUCTOR
 /**
@@ -7,59 +7,59 @@
 Solve::Solve(double D, double Tin, double Tsun, double dt, double dx)
 {
     //set the data
-    this.D = D;
-    this.Tin = Tin;
-    this.Tsun = Tsun;
-    this.dt = dt;
-    this.dx = dx;
-    this.r = D*dt/(dx*dx);
+    this->D=D;
+    this->Tin = Tin;
+    this->Tsun = Tsun;
+    this->dt = dt;
+    this->dx = dx;
+    this->r = D*dt/(dx*dx);
 }
 
 /**
  * virtual method - Not defined here
  */
-void solve()
+void Solve::solve()
 {
 }
 
-double getD()
+double Solve::getD()
 {
-    return this.D;
+    return this->D;
 }
 
-void setD(double D)
+void Solve::setD(double D)
 {
-    this.D = D;
+    this->D = D;
 }
-double getTin()
+double Solve::getTin()
 {
-    return this.Tin;
+    return this->Tin;
 }
-void setTin(double Tin)
+void Solve::setTin(double Tin)
 {
-    this.Tin = Tin;
+    this->Tin = Tin;
 }
-double getTsun()
+double Solve::getTsun()
 {
-    return this.Tsun;
+    return this->Tsun;
 }
-void setTsun(double Tsun)
+void Solve::setTsun(double Tsun)
 {
-    this.Tsun = Tsun;
+    this->Tsun = Tsun;
 }
-double getdt()
+double Solve::getdt()
 {
-    return this.dt;
+    return this->dt;
 }
-void setdt(double dt)
+void Solve::setdt(double dt)
 {
-    this.dt = dt;
+    this->dt = dt;
 }
-double getdx()
+double Solve::getdx()
 {
-    return this.dx;
+    return this->dx;
 }
-void setdx(double dx)
+void Solve::setdx(double dx)
 {
-    this.dx = dx;
+    this->dx = dx;
 }
