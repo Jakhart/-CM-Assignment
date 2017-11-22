@@ -2,7 +2,7 @@
 #include <fstream>   //file IO
 #include <stdexcept> //provides exception
 
-#include "Class/Solver/Explicit/explicit.h"
+#include "../explicit.h"
 
 class DuFortFrankel : public Explicit {
 public:

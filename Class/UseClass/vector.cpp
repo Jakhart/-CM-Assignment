@@ -1,4 +1,4 @@
-#include "Class/UseClass/vector.h"
+#include "vector.h"
 
 #include <iostream> //Generic IO operations
 #include <fstream>  //File IO operations

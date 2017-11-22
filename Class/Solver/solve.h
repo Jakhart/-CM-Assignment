@@ -2,8 +2,8 @@
 #include <fstream>   //file IO
 #include <stdexcept> //provides exception
 
-#include "Class/UseClass/matrix.h"
-#include "Class/UseClass/vector.h"
+#include "../UseClass/matrix.h"
+#include "../UseClass/vector.h"
 
 class Solve
 {

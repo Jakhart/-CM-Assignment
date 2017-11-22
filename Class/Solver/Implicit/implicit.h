@@ -2,7 +2,7 @@
 #include <fstream>   //file IO
 #include <stdexcept> //provides exception
 
-#include "Class/Solver/solve.h"
+#include "../solve.h"
 
 class Implicit : public Solve {
 public:

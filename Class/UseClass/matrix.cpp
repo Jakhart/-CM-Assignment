@@ -1,4 +1,4 @@
-#include "Class/UseClass/matrix.h"
+#include "matrix.h"
 
 // CONSTRUCTORS
 /*=

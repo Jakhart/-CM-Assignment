@@ -1,4 +1,4 @@
-#include "Class/Solver/Explicit/explicit.h"
+#include "explicit.h"
 #include<string>
 
 Explicit::Explicit(double D, double Tin, double Tsun, double dt, double dx) : Solve::Solve(D, Tin, Tsun, dt, dx)

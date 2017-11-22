@@ -1,4 +1,4 @@
-#include "Class/Solver/solve.h"
+#include "solve.h"
 
 //CONSTRUCTOR
 /**

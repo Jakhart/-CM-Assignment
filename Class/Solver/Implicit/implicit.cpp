@@ -1,15 +1,15 @@
-#include "Class/Solver/Implicit/implicit.h"
+#include "implicit.h"
 
 // CONSTRUCTOR
 /**
  * Constructor - 
  */
-Implicit::Implicit(double D, double Tin, double Tsun, double dt, double dx) : Solve::Solve()
+Implicit::Implicit(double D, double Tin, double Tsun, double dt, double dx) : Solve::Solve(D, Tin, Tsun, dt, dx)
 {
 }
 
-void solve(){}
+void Implicit::solve(){}
 
-void Diagonalization()
+void Implicit::Diagonalization()
 {
 }
