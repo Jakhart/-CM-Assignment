@@ -10,7 +10,7 @@ class Implicit : public Solve {
 public:
     Implicit(double D, double Tin, double Tsun, double dt, double dx);
 
-    void solve();
+    void solve(double t);
     
     void Diagonalization();
 };

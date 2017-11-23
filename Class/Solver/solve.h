@@ -21,7 +21,7 @@ public:
 
     Solve(double D, double Tin, double Tsun, double dt, double dx);
 
-    virtual void solve();
+    virtual void solve(double t);
 
     double getD();
     void setD(double D);

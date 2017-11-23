@@ -19,7 +19,7 @@ Solve::Solve(double D, double Tin, double Tsun, double dt, double dx)
 /**
  * virtual method - Not defined here
  */
-void Solve::solve()
+void Solve::solve(double t)
 {
 }
 

@@ -4,7 +4,7 @@ Explicit::Explicit(double D, double Tin, double Tsun, double dt, double dx) : So
 {
 }
 
-void Explicit::solve() {}
+void Explicit::solve(double t) {}
 
 void Explicit::OrderOne(Vector T)
 {

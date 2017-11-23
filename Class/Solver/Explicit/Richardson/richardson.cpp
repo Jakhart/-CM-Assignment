@@ -4,14 +4,15 @@ Richardson::Richardson(double D, double Tin, double Tsun, double dt, double dx) 
 {
 }
 
-void Richardson::solve()
+void Richardson::solve(double t)
 {
     Vector Tpast(n);
     Vector T(n);
     Vector Tnext(n);
     double r = this->D * this->dt / (this->dx * this->dx);
+    double tmax = t / this->dt;
 
-    for (int j = 1; j < 10; j++)
+    for (int j = 1; j < tmax; j++)
     {
         for (int i = 0; i < n; i++)
         {

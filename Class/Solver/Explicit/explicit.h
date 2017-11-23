@@ -9,7 +9,7 @@ class Explicit : public Solve {
 public:
     Explicit(double D, double Tin, double Tsun, double dt, double dx);
 
-    void solve();
+    void solve(double t);
 
     void OrderOne(Vector T);
 };

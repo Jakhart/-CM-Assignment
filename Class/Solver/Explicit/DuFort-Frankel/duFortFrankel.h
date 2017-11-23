@@ -9,5 +9,5 @@ public:
 
     DuFortFrankel(double D, double Tin, double Tsun, double dt, double dx);
 
-    void solve();
+    void solve(double t);
 };

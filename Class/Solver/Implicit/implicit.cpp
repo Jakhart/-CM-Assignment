@@ -8,7 +8,7 @@ Implicit::Implicit(double D, double Tin, double Tsun, double dt, double dx) : So
 {
 }
 
-void Implicit::solve(){}
+void Implicit::solve(double t){}
 
 void Implicit::Diagonalization()
 {
