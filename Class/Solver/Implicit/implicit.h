@@ -1,3 +1,5 @@
+#ifndef IMPLICIT_H //Include guard
+#define IMPLICIT_H
 #include <iostream>  //generic IO
 #include <fstream>   //file IO
 #include <stdexcept> //provides exception
@@ -12,3 +14,5 @@ public:
     
     void Diagonalization();
 };
+
+#endif

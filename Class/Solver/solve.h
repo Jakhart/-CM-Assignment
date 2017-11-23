@@ -1,3 +1,6 @@
+#ifndef SOLVE_H //Include guard
+#define SOLVE_H
+
 #include <iostream>  //generic IO
 #include <fstream>   //file IO
 #include <stdexcept> //provides exception
@@ -13,7 +16,8 @@ public:
     double Tsun; //Surface temperature 300°F inthe Assigment
     double dt;
     double dx;
-    double r;
+    int n; //number of division in Tsun and Tin
+    int L;
 
     Solve(double D, double Tin, double Tsun, double dt, double dx);
 
@@ -34,3 +38,5 @@ public:
     double getdx();
     void setdx(double dx);
 };
+
+#endif

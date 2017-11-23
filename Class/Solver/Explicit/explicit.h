@@ -1,7 +1,8 @@
+#ifndef EXPLICIT_H //Include guard
+#define EXPLICIT_H
 #include <iostream>  //generic IO
 #include <fstream>   //file IO
 #include <stdexcept> //provides exception
-
 #include "../solve.h"
 
 class Explicit : public Solve {
@@ -10,5 +11,7 @@ public:
 
     void solve();
 
-    void OrderOne(std::vector<double> T);
+    void OrderOne(Vector T);
 };
+
+#endif
