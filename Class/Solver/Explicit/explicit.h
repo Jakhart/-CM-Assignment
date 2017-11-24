@@ -11,7 +11,7 @@ public:
 
     void solve(double t);
 
-    void OrderOne(Vector T);
+    void OrderOne(Vector &T);
 };
 
 #endif

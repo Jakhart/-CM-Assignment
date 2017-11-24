@@ -7,10 +7,9 @@
 
 
 int main(){
-    //DuFortFrankel prob = DuFortFrankel(0.1, 100, 300, 0.001, 0.005);
-    Richardson prob = Richardson(0.1, 100, 300, 0.001, 0.005);
+    DuFortFrankel prob = DuFortFrankel(0.1, 100, 300, 0.01, 0.05);
+    //Richardson prob = Richardson(0.1, 100, 300, 0.01, 0.05);
     prob.solve(0.1);
-
     return 0;
 }
 

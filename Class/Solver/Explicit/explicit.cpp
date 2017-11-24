@@ -6,11 +6,17 @@ Explicit::Explicit(double D, double Tin, double Tsun, double dt, double dx) : So
 
 void Explicit::solve(double t) {}
 
-void Explicit::OrderOne(Vector T)
+void Explicit::OrderOne(Vector &T)
 {
+    
     double r = this->D * this->dt / (this->dx * this->dx);
-    for (int i = 0; i < n; i++)
+    double temp;
+    for (int i=1; i<n-1; i++) T[i] = 100;
+    T[0] = 300;
+	T[n-1] = 300;
+    for (int i = 1; i < n-3; i++)
     {
-        T[i] = r * this->Tin + this->Tin + (1 - 2 * r) * this->Tin;
+        temp = r * (T[i + 2] - 2 * T[i+1] + T[i]) + T[i+1];  
+        T[i] = temp;
     }
 }
