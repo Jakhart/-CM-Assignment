@@ -16,6 +16,7 @@ public:
     double Tsun; //Surface temperature 300°F inthe Assigment
     double dt;
     double dx;
+    double r;
     int n; //number of division in Tsun and Tin
     int L;
 

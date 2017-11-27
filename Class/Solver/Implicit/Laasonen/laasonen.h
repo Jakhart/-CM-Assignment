@@ -8,6 +8,5 @@ class Laasonen : public Implicit {
 public:
 
     Laasonen(double D, double Tin, double Tsun, double dt, double dx);
-
     void solve(double t);
-}
+};

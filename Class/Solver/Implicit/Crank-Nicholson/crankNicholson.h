@@ -10,4 +10,4 @@ public:
     CrankNicholson(double D, double Tin, double Tsun, double dt, double dx);
 
     void solve(double t);
-}
+};

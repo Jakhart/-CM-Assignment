@@ -12,6 +12,7 @@ Solve::Solve(double D, double Tin, double Tsun, double dt, double dx)
     this->Tsun = Tsun;
     this->dt = dt;
     this->dx = dx;
+    this->r = D * dt / (dx * dx); 
     L = 1; //the wall is 1 ft thick 
     n = L / dx;
 }
