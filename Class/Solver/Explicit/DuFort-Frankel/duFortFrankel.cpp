@@ -20,12 +20,12 @@ void DuFortFrankel::solve(double t)
     {
         for (int i = 1; i < n-1; i++)
         {
-            Tnext[i] = (T[i] + 2 * this->r * (T[i+1] - Tpast[i] + T[i-1])) / (1 + 2 * this->r);
-            Tpast[i] = T[i];
-            T[i] = Tnext[i];
+            Tnext[i] = (2 * this->r * T[i + 1] + 2 * this->r * T[i - 1] + (1 - 2 * this->r) * Tpast[i]) / (1 + 2 * this->r);
         }
         for (int i = 0; i < n; i++)
         {
+            Tpast[i] = T[i];
+            T[i] = Tnext[i];
 		    std::cout << T[i] << " ";
 	    }
         std::cout << "\n";

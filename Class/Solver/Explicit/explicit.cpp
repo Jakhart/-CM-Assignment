@@ -8,15 +8,20 @@ void Explicit::solve(double t) {}
 
 void Explicit::OrderOne(Vector &T)
 {
-    
-    double r = this->D * this->dt / (this->dx * this->dx);
-    double temp;
+    Vector temp(n);
     for (int i=1; i<n-1; i++) T[i] = 100;
-    T[0] = 300;
-	T[n-1] = 300;
-    for (int i = 1; i < n-3; i++)
-    {
-        temp = r * (T[i + 2] - 2 * T[i+1] + T[i]) + T[i+1];  
-        T[i] = temp;
-    }
+    T[0] = T[n-1] = 300;
+	// T[n-1] = 300;
+    // for (int i = 1; i < n - 3; i++)
+    // {
+    //     temp[i+1] = this->r * (T[i + 2] - 2 * T[i+1] + T[i]) + T[i+1];  
+    // }
+    // for (int i = 1; i < n-1; i++)
+    // {
+	//     T[i] = temp[i];
+	// }
+    // for (int i = 0; i < n; i++)
+    // {
+	//     std::cout << T[i] << " ";
+	// }
 }

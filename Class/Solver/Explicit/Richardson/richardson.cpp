@@ -17,7 +17,7 @@ void Richardson::solve(double t)
     //Calcultion of the Température at n+1
     for (int j = 1; j < tmax; j++)
     {
-        for (int i = 0; i < n; i++)
+        for (int i = 1; i < n-1; i++)
         {
             Tnext[i] = Tpast[i] + 2 * this->r * (T[i+1] - 2 * T[i] + T[i-1]);
             Tpast[i] = T[i];

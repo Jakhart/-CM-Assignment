@@ -25,7 +25,7 @@ void Laasonen::solve(double t)
         for (int j = n-2; j >= 0; j--)
         {
             Diagonalization(Tpast);
-            Tnext[j] = B[j] - A[i] * Tnext[j+1];
+            Tnext[j] = B[j] - A[j] * Tnext[j+1];
             Tpast[j+1] = Tnext[j+1];
         }
         Tpast[0] = Tnext[0] = Tsun;
