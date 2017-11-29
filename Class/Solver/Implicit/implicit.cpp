@@ -14,8 +14,6 @@ void Implicit::solve(double t){}
 
 void Implicit::Diagonalization(Vector &T)
 {
-    T[1] = T[1] + r * Tsun;
-    T[n - 2] = T[n - 2] + r * Tsun;
     this->A[1] = T[1] / b;
     this->B[1] = a / b;
     for (int i = 2; i < n-1; i++)

@@ -14,17 +14,17 @@ void Laasonen::solve(double t)
     //Initialisation of Tpast and T
     for (int i = 1; i < n-1; i++) Tpast[i] = Tin;
     Tpast[0] = Tpast[n-1] = Tnext[0] = Tnext[n-1] =Tsun;
-    // for (int j = 0; j < n; j++)
-    //     {
-	// 	    std::cout << Tpast[j] << " ";
-	//     }
-    // std::cout << "\n";
 
     for (int j = 0; j < tmax; j++)
-    {   
+    {
+        //Initialisation of the first and last term of b in Ax = b
+        Tpast[1] = Tpast[1] + r * Tsun;
+        Tpast[n - 2] = Tpast[n - 2] + r * Tsun;
+        //Use Method's Thomas
         Diagonalization(Tpast);
-        Tnext[n - 2] = A[n - 2];
-        for (int i = n-2; i > 0; i--)
+        //Resolution of Ux = y
+        Tnext[n-2] = A[n-2];
+        for (int i = n-3; i > 0; i--)
         {
             Tnext[i] = A[i] - B[i] * Tnext[i+1];
         }
