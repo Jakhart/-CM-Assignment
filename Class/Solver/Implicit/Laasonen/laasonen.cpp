@@ -11,6 +11,7 @@ void Laasonen::solve(double t)
     Vector Tnext(n);
     Vector Tpast(n);
     double tmax = t / this->dt;
+    //Initialisation of Tpast and T
     for (int i = 1; i < n-1; i++) Tpast[i] = Tin;
     Tpast[0] = Tpast[n-1] = Tsun + r * Tsun;
     Tnext[0] = Tnext[n-1] = Tsun;

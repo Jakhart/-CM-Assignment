@@ -14,17 +14,15 @@ void Richardson::solve(double t)
     for (int i = 0; i < n; i++) Tpast[i] = Tin;
     Tpast[0] = Tpast[n-1] = Tnext[0] = Tnext[n-1] = Tsun;
     OrderOne(T);
+
     //Calcultion of the Température at n+1
     for (int j = 1; j < tmax; j++)
     {
-        for (int i = 1; i < n-1; i++)
-        {
-            Tnext[i] = Tpast[i] + 2 * this->r * (T[i+1] - 2 * T[i] + T[i-1]);
-            Tpast[i] = T[i];
-            T[i] = Tnext[i];
-        }
+        for (int i = 1; i < n-1; i++) Tnext[i] = Tpast[i] + 2 * this->r * (T[i + 1] - 2 * T[i] + T[i - 1]);
         for (int i = 0; i < n; i++)
         {
+            Tpast[i] = T[i];
+            T[i] = Tnext[i];
 		    std::cout << T[i] << " ";
 	    }
         std::cout << "\n";
