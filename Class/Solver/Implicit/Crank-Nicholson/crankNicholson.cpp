@@ -14,25 +14,20 @@ void CrankNicholson::solve(double t)
     for (int i = 1; i < n-1; i++) Tpast[i] = Tin;
     Tpast[0] = Tpast[n-1] = Tnext[0] = Tnext[n-1] = Tsun;
     //Diagonalization(Tpast);
-    // for (int j = 0; j < n; j++)
-    //     {
-	// 	    std::cout << Tpast[j] << " ";
-	//     }
-    //     std::cout << "\n";
-    for (int i = 0; i < tmax; i++)
+    for (int j = 0; j < tmax; j++)
     {
-        for (int j = n-3; j > 0; j--)
+        Tpast[1] = r / 2 * Tpast[2] + (1 - r) * Tpast[1] + r / 2 * Tpast[0] + r / 2 * Tsun;
+        Tpast[n-2] = r / 2 * Tpast[n-1] + (1 - r) * Tpast[n-2] + r / 2 * Tpast[n-3] + r / 2 * Tsun;
+        Diagonalization(Tpast);
+        Tnext[n-2] = A[n-2];
+        for (int i = n-3; i > 0; i--)
         {
-            Tpast[1] = r / 2 * Tpast[2] + (1 - r) * Tpast[1] + r / 2 * Tpast[0] + r / 2 * Tsun;
-            Tpast[n-2] = r / 2 * Tpast[n-1] + (1 - r) * Tpast[n-2] + r / 2 * Tpast[n-3] + r / 2 * Tsun;
-            Diagonalization(Tpast);
-            if (j == n-3) Tnext[j+1] = Tpast[j+1];
-            Tnext[j] = Tpast[j] - A[j] * Tnext[j+1];
+            Tnext[i] = A[i] - B[i] * Tnext[i+1];
         }
-        Tnext[n-1] = Tsun;
-        for (int j = 0; j < n; j++)
+        for (int i = 0; i < n; i++)
         {
-		    std::cout << Tnext[j] << " ";
+            Tpast[i+1] = Tnext[i+1];
+            std::cout << Tnext[i] << " ";
 	    }
         std::cout << "\n";
     }
