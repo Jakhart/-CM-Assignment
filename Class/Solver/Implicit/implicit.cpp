@@ -14,11 +14,11 @@ void Implicit::solve(double t){}
 
 void Implicit::Diagonalization(Vector &T)
 {
-    this->A[0] = b / b;
-    T[0] = T[0] / b;
-    for (int i = 1; i < n-1; i++)
+    this->A[1] = (T[1] + r * Tsun) / b;
+    this->B[1] = a / b;
+    for (int i = 2; i < n-1; i++)
     {
-        this->A[i] = b / (b - a * this->A[i-1]);
-        T[i] = (T[i] - a * T[i-1]) / (b - a * this->A[i-1]);
+        this->A[i] = (T[i] - a * A[i-1]) / (b - a * this->B[i-1]);
+        this->B[i] = a / (b - a * this->B[i-1]);
     }
 }
