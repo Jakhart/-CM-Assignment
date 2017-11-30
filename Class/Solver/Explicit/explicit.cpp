@@ -4,7 +4,8 @@ Explicit::Explicit(double D, double Tin, double Tsun, double dt, double dx) : So
 {
 }
 
-void Explicit::solve(double t) {}
+void Explicit::solve(double t) {
+}
 
 void Explicit::OrderOne(Vector &T)
 {
@@ -12,7 +13,7 @@ void Explicit::OrderOne(Vector &T)
     for (int i=1; i<n-1; i++) T[i] = 100;
     T[0] = T[n-1] = 300;
 	T[n-1] = 300;
-    for (int i = 1; i < n - 3; i++)
+    for (int i = 1; i < n - 1; i++)
     {
         temp[i] = this->r * (T[i + 1] - 2 * T[i] + T[i - 1]) + T[i];  
     }
