@@ -1,9 +1,99 @@
 \documentclass [10 pt, a4 paper]{article}
-    \usepackage{booktabs}
-    
-    \title{Sample Report}
-    \author{Vincent Richard}
-    \date{02/11/17}
-    \begin{document}
-        Sample text
-    \end{document}
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{array}
+\author{Vincent Richard}
+\date{02/11/17}
+\title{Computtional Methods and C++ Assigment}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+\newpage
+
+\begin{abstract}
+    Sample text
+\end{abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    Introduction    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+In this assignment you are asked to examine the application of numerical schemes
+for the solution of partial diferential equations. In order to  do so we will consider 
+the following probem.
+
+A wall 1 ft. thick and infinite in other directions has an initial uniform temperature Tin of 100$^{\circ}$F. The surface temperatures Tsur at the two
+sides are suddenly increased and maintained at 300$^{\circ}$F. The wall is composed of
+nickel steel (40\% Ni) with a diffusivity of D = 0:1 ft2=hr. Please compute the
+temperature distribution within the wall as a function of time.
+The governing equation to be solved is the unsteady one-space dimensional
+heat conduction equation, which in Cartesian coordinates is:
+\begin{equation}
+    \frac{\partial T}{\partial t} = D \frac{\partial T}{\partial x^{2}}
+\end{equation}
+
+\subsection{Presentation of the different methods used}
+
+\subsubsection{DuFort-Frankel}
+The DuFort-Frankel scheme is an explicit scheme unconditionnaly stable the parabolic PDE is:
+\begin{equation}
+    \frac{T_{i}^{n+1} - T_{i}^{n-1}}{2\Delta t} = D \frac{T_{i+1}^{n} -(T_{i}^{n+1} + T_{i}^{n-1}) + T_{i-1}^{n})}{\Delta x^{2}}
+\end{equation}
+This equation leads to an explicit form which is:
+\begin{equation}
+    T_{i}^{n+1}(1 + 2r) = T_{i}^{n-1} +2r(T_{i+1}^{n} - T_{i}^{n-1} + T_{i-1}^{n}), r =\frac{D\Delta t}{\Delta x^{2}}
+\end{equation}
+
+\subsubsection{Richardson}
+The Richardson scheme is an explixit scheme, unconditionnaly unstable:
+\begin{equation}
+    \frac{T_{i}^{n+1} - T_{i}^{n-1}}{2\Delta t} = D \frac{T_{i+1}^{n} - 2 T_{i}^{n} + T_{i-1}^{n}}{\Delta x^{2}}
+\end{equation}
+This equation leads to an explicit form which is:
+\begin{equation}
+    T_{i}^{n+1} = 2r(T_{i+1}^{n} - 2T_{i}^{n} + T_{i-1}^{n}) + T_{i}^{n-1}, r=\frac{D\Delta t}{\Delta x^{2}}
+\end{equation}
+%If we substitute the Fourier  mode $T_{i}^{n} = \lambda_{k}^{n}e^{ik\pi j\Delta x}$ into the scheme we are lead to the characteristic equation of the Richardson scheme:
+%\begin{equation}
+%    \lambda_{k}^{2}+8\lambda_{k}\mu sin^{2}(\frac{k\pi \Delta x}{2}) - 1 = 0
+%\end{equation}
+
+\subsubsection{Laasonen}
+The Laasonen scheme is an implicit scheme, that as for equation:
+\begin{equation}
+    \frac{T_{i}^{n+1} - T_{i}^{n-1}}{2\Delta t} = D\frac{T_{i+1}^{n} - 2T_{i}^{n} + T_{i-1}^{n}}{\Delta x^{2}}
+\end{equation}
+
+This equation leads to a form that result in asystem of linear equation:
+\begin{equation}
+    -r T_{i+1}^{n+1} + (1+2r)T_{i}^{n+1} -rT_{i-1}^{n+1} =T_{i}^{n}, r=\frac{D\Delta t}{\Delta x^{2}}
+\end{equation}
+
+\subsubsection{Cranck-Nicholson}
+The Crank-Nicholson scheme is an implicit scheme, that as for equation:
+\begin{equation} 
+    \frac{T_{i}^{n+1} - T_{i}^{n}}{\Delta t} = \frac{D}{2}(\frac{T_{i+1}^{n+1}-2T_{i}^{n+1}+T_{i-1}^{n+1}}{\Delta x^{2}} + \frac{T_{i+1}^{n}-2T_{i}^{n}+T_{i-1}^{n}}{\Delta x^{2}})
+\end{equation}
+
+This equation leads to a form that result in asystem of linear equation:
+\begin{equation}
+    -\frac{r}{2} T_{i+1}^{n+1}+(1+r)T_{i}^{n+1}-\frac{r}{2}T_{i-1}^{n+1} = \frac{r}{2}T_{i+1}^{n} + (1-r)T_{i}^{n} + \frac{r}{2}T_{i-1}^{n}
+\end{equation}
+\quad
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Methods Procedures      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Methods and Procedures}
+ 
+
+
+\end{document}
+
