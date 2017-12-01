@@ -11,11 +11,12 @@ void Laasonen::solve(double t)
     Vector Tnext(n);
     Vector Tpast(n);
     double tmax = t / this->dt;
+    std::cout << "Laasonen Result"<<"\n";
     //Initialisation of Tpast and T
     for (int i = 1; i < n-1; i++) Tpast[i] = Tin;
     Tpast[0] = Tpast[n-1] = Tnext[0] = Tnext[n-1] =Tsun;
 
-    for (int j = 0; j < tmax; j++)
+    for (int j = 1; j < tmax+1; j++)
     {
         //Initialisation of the first and last term of b in Ax = b
         Tpast[1] = Tpast[1] + r * Tsun;
@@ -31,8 +32,17 @@ void Laasonen::solve(double t)
         for (int i = 0; i < n; i++)
         {
             Tpast[i+1] = Tnext[i+1];
-		    std::cout << Tnext[i] << " ";
 	    }
-        std::cout << "\n";
+        //Print the result for every 0.1hr
+        if (j % 10 == 0)
+        {
+            std::cout << "******************************"<< "\n";
+            std::cout << "for t = " << j * dt << "\n";
+            for (int i = 0; i < n; i++)
+            {
+                std::cout << Tnext[i] << " ";
+            }
+            std::cout << "\n";
+        }
     }
 };

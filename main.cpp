@@ -13,8 +13,8 @@ int main(){
     // DuFortFrankel prob = DuFortFrankel(0.1, 100, 300, 0.01, 0.05);
     // Richardson prob = Richardson(0.1, 100, 300, 0.01, 0.05);
     // Laasonen prob = Laasonen(0.1, 100, 300, 0.01, 0.05);
-    // CrankNicholson prob = CrankNicholson(0.1, 100, 300, 0.01, 0.05);
-    Analitical prob = Analitical(0.1, 100, 300, 0.01, 0.05);
-    prob.solve(0.1);
+    CrankNicholson prob = CrankNicholson(0.1, 100, 300, 0.01, 0.05);
+    // Analitical prob = Analitical(0.1, 100, 300, 0.01, 0.05);
+    prob.solve(0.5);
     return 0;
 }
