@@ -1,22 +1,30 @@
 #include "richardson.h"
 
+//CONSTRUCTOR
+/**
+ * Default constructor - Based on the Solver constructor
+ */
 Richardson::Richardson(double D, double Tin, double Tsun, double dt, double dx) : Explicit::Explicit(D, Tin, Tsun, dt, dx)
 {
 }
 
+//SOLVING METHODS
+/**
+ * Virtual method -
+ * Solve the problem with the Richardson scheme
+ */
 void Richardson::solve(double t)
 {
+    //INITIALISATION
     Vector Tpast(n);
     Vector T(n);
     Vector Tnext(n);
     double tmax = t / this->dt;
     std::cout << "Richardson Result"<<"\n";
-    //Initialisation of Tpast and T
     for (int i = 0; i < n; i++) Tpast[i] = Tin;
     Tpast[0] = Tpast[n-1] = Tnext[0] = Tnext[n-1] = Tsun;
     OrderOne(T);
-
-    //Calcultion of the Température at n+1
+    //CALCULATION OF T AT N+1
     for (int j = 2; j < tmax+1; j++)
     {
         for (int i = 1; i < n-1; i++) Tnext[i] = Tpast[i] + 2 * this->r * (T[i + 1] - 2 * T[i] + T[i - 1]);
@@ -25,7 +33,7 @@ void Richardson::solve(double t)
             Tpast[i] = T[i];
             T[i] = Tnext[i];
 	    }
-        //Print the result for every 0.1hr
+        //PRINTING THE RESULT FOR EVERY 0.1hrs
         if (j % 10 == 0)
         {
             std::cout << "******************************"<< "\n";

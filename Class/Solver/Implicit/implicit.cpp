@@ -2,7 +2,7 @@
 
 // CONSTRUCTOR
 /**
- * Constructor - 
+ * Constructor - Same as the Soler constructor, we initialise the two vectors A and B
  */
 Implicit::Implicit(double D, double Tin, double Tsun, double dt, double dx) : Solve::Solve(D, Tin, Tsun, dt, dx)
 {
@@ -10,8 +10,16 @@ Implicit::Implicit(double D, double Tin, double Tsun, double dt, double dx) : So
     B = Vector(n);
 }
 
+//SOLVER METHOD
+/**
+ * Virtual method - Not defined here
+ */
 void Implicit::solve(double t){}
 
+//TOOL METHOD
+/**
+ * Void methods that implement the first part of the thomas algorithm
+ */
 void Implicit::Diagonalization(Vector &T)
 {
     this->A[1] = T[1] / b;

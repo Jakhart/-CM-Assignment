@@ -18,7 +18,7 @@ the first term needed to apply the schemes
  */
 class Explicit : public Solve {
 public:
-    //CONSTRUCTORS
+    //CONSTRUCTOR
     /**
      * Default constructor. Based on the Solve constructor
      * @see Solve()
@@ -33,7 +33,7 @@ public:
     void solve(double t);
 
     //TOOL METHOD
-    /**void method that will change the value of the Vector T and calculate 
+    /**Void method that will change the value of the Vector T and calculate 
     the first scheme with a forward time central space scheme
      */
     void OrderOne(Vector &T);

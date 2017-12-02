@@ -21,7 +21,6 @@ void DuFortFrankel::solve(double t)
     Vector Tnext(n);
     double tmax = t / this->dt;
     std::cout << "DuFort-Frankel Result"<<"\n";
-    //CALCULATION
     for (int i = 0; i < n; i++) Tpast[i] = Tin;
     Tpast[0] = Tpast[n-1] = Tnext[0] = Tnext[n-1] = Tsun;
     OrderOne(T);
