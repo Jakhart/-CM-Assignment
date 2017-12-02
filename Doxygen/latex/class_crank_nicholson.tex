@@ -1,0 +1,65 @@
+\hypertarget{class_crank_nicholson}{}\section{Crank\+Nicholson Class Reference}
+\label{class_crank_nicholson}\index{Crank\+Nicholson@{Crank\+Nicholson}}
+
+
+{\ttfamily \#include $<$crank\+Nicholson.\+h$>$}
+
+Inheritance diagram for Crank\+Nicholson\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_crank_nicholson}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_crank_nicholson_a77c284d244c4c0aabcd2b7d35efc356e}{Crank\+Nicholson} (double D, double Tin, double Tsun, double dt, double dx)
+\item 
+void \hyperlink{class_crank_nicholson_a999d04c6ef97b0794f66584f9192dbee}{solve} (double t)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+It\textquotesingle{}s a class designed to solved the problem with the Crank-\/\+Nicholson method It\textquotesingle{}s derived from the \hyperlink{class_implicit}{Implicit} class The Crank-\/\+Nicholson class provides\+: ~\newline
+-\/basic constructor based on the \hyperlink{class_solve}{Solve} class constructor ~\newline
+-\/a virtual solve function that solve the problem with the Crank-\/\+Nicholson scheme 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_crank_nicholson_a77c284d244c4c0aabcd2b7d35efc356e}\label{class_crank_nicholson_a77c284d244c4c0aabcd2b7d35efc356e}} 
+\index{Crank\+Nicholson@{Crank\+Nicholson}!Crank\+Nicholson@{Crank\+Nicholson}}
+\index{Crank\+Nicholson@{Crank\+Nicholson}!Crank\+Nicholson@{Crank\+Nicholson}}
+\subsubsection{\texorpdfstring{Crank\+Nicholson()}{CrankNicholson()}}
+{\footnotesize\ttfamily Crank\+Nicholson\+::\+Crank\+Nicholson (\begin{DoxyParamCaption}\item[{double}]{D,  }\item[{double}]{Tin,  }\item[{double}]{Tsun,  }\item[{double}]{dt,  }\item[{double}]{dx }\end{DoxyParamCaption})}
+
+Default constructor. Based on the \hyperlink{class_solve}{Solve} constructor and implicit constuctor \begin{DoxySeeAlso}{See also}
+\hyperlink{class_solve_a1e0efad6dcf6b09759dd38df7aa08db8}{Solve()} 
+
+\hyperlink{class_explicit}{Explicit()}
+\end{DoxySeeAlso}
+Default constructor -\/ Based on the Solver and \hyperlink{class_implicit}{Implicit} constructor We implement the value of a and b use in the \hyperlink{class_implicit}{Implicit} class \begin{DoxySeeAlso}{See also}
+\hyperlink{class_implicit_a572fff2232977c83c432f993f37a7853}{Diagonalization(\+Vector \&\+T)} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_crank_nicholson_a999d04c6ef97b0794f66584f9192dbee}\label{class_crank_nicholson_a999d04c6ef97b0794f66584f9192dbee}} 
+\index{Crank\+Nicholson@{Crank\+Nicholson}!solve@{solve}}
+\index{solve@{solve}!Crank\+Nicholson@{Crank\+Nicholson}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void Crank\+Nicholson\+::solve (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual methods that solve the problem for each scheme depending in which class the objet is define and print the result in the consol. ~\newline
+ \hyperlink{class_solve}{Solve} the problem using the Crank-\/\+Nicholson scheme \begin{DoxySeeAlso}{See also}
+\hyperlink{class_implicit_a572fff2232977c83c432f993f37a7853}{Diagonalization(\+Vector \&\+T)}
+\end{DoxySeeAlso}
+Virtual method -\/ \hyperlink{class_solve}{Solve} the problem with the Cranck-\/\+Nicholson scheme 
+
+Reimplemented from \hyperlink{class_solve_a1a56722993fdabea9928637d7dd8a2c7}{Solve}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Class/\+Solver/\+Implicit/\+Crank-\/\+Nicholson/crank\+Nicholson.\+h\item 
+Class/\+Solver/\+Implicit/\+Crank-\/\+Nicholson/crank\+Nicholson.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,78 @@
+\hypertarget{class_explicit}{}\section{Explicit Class Reference}
+\label{class_explicit}\index{Explicit@{Explicit}}
+
+
+{\ttfamily \#include $<$explicit.\+h$>$}
+
+Inheritance diagram for Explicit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_explicit}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_explicit_ab5b890fae2ea8a91c95e9a15f552f36a}{Explicit} (double D, double Tin, double Tsun, double dt, double dx)
+\item 
+void \hyperlink{class_explicit_ac99aa17bfd95f66b33e5c0ecf0e53785}{solve} (double t)
+\item 
+void \hyperlink{class_explicit_a6069720017eb2bb0d989b2557c162c97}{Order\+One} (\hyperlink{class_vector}{Vector} \&T)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is derived from the \hyperlink{class_solve}{Solve} class and is the base class of the two explicit scheme Class, \hyperlink{class_du_fort_frankel}{Du\+Fort\+Frankel} and \hyperlink{class_richardson}{Richardson}.
+
+The \hyperlink{class_explicit}{Explicit} class provides\+: ~\newline
+-\/basic constructor derived from \hyperlink{class_solve}{Solve} ~\newline
+-\/a virtual function \hyperlink{class_explicit_ac99aa17bfd95f66b33e5c0ecf0e53785}{solve()} that will be use in the derived function to solve the problem ~\newline
+-\/a \begin{DoxySeeAlso}{See also}
+Ordern\+One(\+Vector \&\+T) function that will be used in both derived class to calculate the first term needed to apply the schemes 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_explicit_ab5b890fae2ea8a91c95e9a15f552f36a}\label{class_explicit_ab5b890fae2ea8a91c95e9a15f552f36a}} 
+\index{Explicit@{Explicit}!Explicit@{Explicit}}
+\index{Explicit@{Explicit}!Explicit@{Explicit}}
+\subsubsection{\texorpdfstring{Explicit()}{Explicit()}}
+{\footnotesize\ttfamily Explicit\+::\+Explicit (\begin{DoxyParamCaption}\item[{double}]{D,  }\item[{double}]{Tin,  }\item[{double}]{Tsun,  }\item[{double}]{dt,  }\item[{double}]{dx }\end{DoxyParamCaption})}
+
+Default constructor. Based on the \hyperlink{class_solve}{Solve} constructor \begin{DoxySeeAlso}{See also}
+\hyperlink{class_solve_a1e0efad6dcf6b09759dd38df7aa08db8}{Solve()}
+\end{DoxySeeAlso}
+Default constructor -\/ Same as the Soler constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_explicit_a6069720017eb2bb0d989b2557c162c97}\label{class_explicit_a6069720017eb2bb0d989b2557c162c97}} 
+\index{Explicit@{Explicit}!Order\+One@{Order\+One}}
+\index{Order\+One@{Order\+One}!Explicit@{Explicit}}
+\subsubsection{\texorpdfstring{Order\+One()}{OrderOne()}}
+{\footnotesize\ttfamily void Explicit\+::\+Order\+One (\begin{DoxyParamCaption}\item[{\hyperlink{class_vector}{Vector} \&}]{T }\end{DoxyParamCaption})}
+
+Void method that will change the value of the \hyperlink{class_vector}{Vector} T and calculate the first scheme with a forward time central space scheme
+
+Void methods that initialize T at t=0 and calculate T at t = dt \mbox{\Hypertarget{class_explicit_ac99aa17bfd95f66b33e5c0ecf0e53785}\label{class_explicit_ac99aa17bfd95f66b33e5c0ecf0e53785}} 
+\index{Explicit@{Explicit}!solve@{solve}}
+\index{solve@{solve}!Explicit@{Explicit}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void Explicit\+::solve (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual methods that solve the problem for each scheme depending in which class the objet is define and print it in the consol.  the \hyperlink{class_explicit}{Explicit} class it doesn\textquotesingle{}t do anything
+
+Virtual method -\/ Not defined here 
+
+Reimplemented from \hyperlink{class_solve_a1a56722993fdabea9928637d7dd8a2c7}{Solve}.
+
+
+
+Reimplemented in \hyperlink{class_richardson_ab8dd2ff0e58c11092fead4d45a4f5c64}{Richardson}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Class/\+Solver/\+Explicit/explicit.\+h\item 
+Class/\+Solver/\+Explicit/explicit.\+cpp\end{DoxyCompactItemize}

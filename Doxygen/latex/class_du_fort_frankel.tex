@@ -1,0 +1,62 @@
+\hypertarget{class_du_fort_frankel}{}\section{Du\+Fort\+Frankel Class Reference}
+\label{class_du_fort_frankel}\index{Du\+Fort\+Frankel@{Du\+Fort\+Frankel}}
+
+
+{\ttfamily \#include $<$du\+Fort\+Frankel.\+h$>$}
+
+Inheritance diagram for Du\+Fort\+Frankel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_du_fort_frankel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_du_fort_frankel_ab9a6490d0fd3b08e7e22fba2ade16c19}{Du\+Fort\+Frankel} (double D, double Tin, double Tsun, double dt, double dx)
+\item 
+void \hyperlink{class_du_fort_frankel_a73204223c7ace1e3f95e5d89d02c5208}{solve} (double t)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+It\textquotesingle{}s a class designed to solved the problem with the Du\+Fort-\/\+Frankel method It\textquotesingle{}s derived from the \hyperlink{class_explicit}{Explicit} class
+
+The \hyperlink{class_du_fort_frankel}{Du\+Fort\+Frankel} class provides\+: ~\newline
+-\/basic constructor based on the \hyperlink{class_solve}{Solve} class constructor ~\newline
+-\/a virtual solve function that solve the problem with the Du\+Fort-\/\+Frankel scheme 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_du_fort_frankel_ab9a6490d0fd3b08e7e22fba2ade16c19}\label{class_du_fort_frankel_ab9a6490d0fd3b08e7e22fba2ade16c19}} 
+\index{Du\+Fort\+Frankel@{Du\+Fort\+Frankel}!Du\+Fort\+Frankel@{Du\+Fort\+Frankel}}
+\index{Du\+Fort\+Frankel@{Du\+Fort\+Frankel}!Du\+Fort\+Frankel@{Du\+Fort\+Frankel}}
+\subsubsection{\texorpdfstring{Du\+Fort\+Frankel()}{DuFortFrankel()}}
+{\footnotesize\ttfamily Du\+Fort\+Frankel\+::\+Du\+Fort\+Frankel (\begin{DoxyParamCaption}\item[{double}]{D,  }\item[{double}]{Tin,  }\item[{double}]{Tsun,  }\item[{double}]{dt,  }\item[{double}]{dx }\end{DoxyParamCaption})}
+
+Default constructor. Based on the \hyperlink{class_solve}{Solve} constructor \begin{DoxySeeAlso}{See also}
+\hyperlink{class_solve_a1e0efad6dcf6b09759dd38df7aa08db8}{Solve()}
+\end{DoxySeeAlso}
+Default constructor -\/ Based on the Solver constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_du_fort_frankel_a73204223c7ace1e3f95e5d89d02c5208}\label{class_du_fort_frankel_a73204223c7ace1e3f95e5d89d02c5208}} 
+\index{Du\+Fort\+Frankel@{Du\+Fort\+Frankel}!solve@{solve}}
+\index{solve@{solve}!Du\+Fort\+Frankel@{Du\+Fort\+Frankel}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void Du\+Fort\+Frankel\+::solve (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual methods that solve the problem for each scheme depending in which class the objet is define and print the result in the consol. ~\newline
+ \hyperlink{class_solve}{Solve} the problem using the \hyperlink{class_du_fort_frankel}{Du\+Fort\+Frankel} scheme \begin{DoxySeeAlso}{See also}
+\hyperlink{class_explicit_a6069720017eb2bb0d989b2557c162c97}{Order\+One(\+Vector \&\+T)}
+\end{DoxySeeAlso}
+Virtual method -\/ \hyperlink{class_solve}{Solve} the problem with the Du\+Fort-\/\+Frankel scheme 
+
+Reimplemented from \hyperlink{class_solve_a1a56722993fdabea9928637d7dd8a2c7}{Solve}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Class/\+Solver/\+Explicit/\+Du\+Fort-\/\+Frankel/du\+Fort\+Frankel.\+h\item 
+Class/\+Solver/\+Explicit/\+Du\+Fort-\/\+Frankel/du\+Fort\+Frankel.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{class_analytical}{}\section{Analytical Class Reference}
+\label{class_analytical}\index{Analytical@{Analytical}}
+
+
+{\ttfamily \#include $<$analytical.\+h$>$}
+
+Inheritance diagram for Analytical\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_analytical}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_analytical_a5a2be7809dfe198c5d6bdc5b6448f75b}{Analytical} (double D, double Tin, double Tsun, double dt, double dx)
+\item 
+void \hyperlink{class_analytical_a8fe1d5769bb516115a31719222eb9ae5}{solve} (double t)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_analytical_abee1da12ac56489506088600823328eb}\label{class_analytical_abee1da12ac56489506088600823328eb}} 
+\hyperlink{class_vector}{Vector} {\bfseries T}
+\item 
+\mbox{\Hypertarget{class_analytical_a3a6b8bb5c9985bdfba024ecc378fef14}\label{class_analytical_a3a6b8bb5c9985bdfba024ecc378fef14}} 
+int {\bfseries m}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+It\textquotesingle{}s a derived class from \hyperlink{class_solve}{Solve} /n\+It\textquotesingle{}s purpose is to calculate the solution of the problem with the analytical solution ~\newline
+-\/T is the solution of the problem ~\newline
+-\/m is the number that will remplace infinity in the sum of the analytical solution
+
+The \hyperlink{class_analytical}{Analytical} class provide ~\newline
+-\/a basic constructor based on the ine define in the solver class ~\newline
+-\/a solve function that will calculate an approximation of T base on the analytical solution, T will be more and more accurate as m grows \begin{DoxySeeAlso}{See also}
+\hyperlink{class_solve_a1e0efad6dcf6b09759dd38df7aa08db8}{Solve()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_analytical_a5a2be7809dfe198c5d6bdc5b6448f75b}\label{class_analytical_a5a2be7809dfe198c5d6bdc5b6448f75b}} 
+\index{Analytical@{Analytical}!Analytical@{Analytical}}
+\index{Analytical@{Analytical}!Analytical@{Analytical}}
+\subsubsection{\texorpdfstring{Analytical()}{Analytical()}}
+{\footnotesize\ttfamily Analytical\+::\+Analytical (\begin{DoxyParamCaption}\item[{double}]{D,  }\item[{double}]{Tin,  }\item[{double}]{Tsun,  }\item[{double}]{dt,  }\item[{double}]{dx }\end{DoxyParamCaption})}
+
+Default constructor. Based on the \hyperlink{class_solve}{Solve} class constructor, it also define a parameter m and a null vector T
+
+Default constructor -\/  based on the \hyperlink{class_solve}{Solve} class constructor  a value of m high enough for the approximation to be relevant (here 10 000)  the solution vector T as null expect for the two bundary condition 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_analytical_a8fe1d5769bb516115a31719222eb9ae5}\label{class_analytical_a8fe1d5769bb516115a31719222eb9ae5}} 
+\index{Analytical@{Analytical}!solve@{solve}}
+\index{solve@{solve}!Analytical@{Analytical}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void Analytical\+::solve (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual methods that solve the problem for each scheme depending in which class the objet is define and print it in the consol.  the analytical class it will print the approximate value of T due to the simplicfication of the infinity sum
+
+Virtual method -\/ We use two loop in order to calculate the value of T at each time and each position until the input t is reached. We also print the value of T for every 0.\+1hrs until t is reach 
+
+Reimplemented from \hyperlink{class_solve_a1a56722993fdabea9928637d7dd8a2c7}{Solve}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Class/\+Solver/\+Analytical/analytical.\+h\item 
+Class/\+Solver/\+Analytical/analytical.\+cpp\end{DoxyCompactItemize}
