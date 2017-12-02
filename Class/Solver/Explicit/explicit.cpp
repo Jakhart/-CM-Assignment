@@ -1,12 +1,24 @@
 #include "explicit.h"
 
+//CONSTRUCTOR
+/**
+ * Default constructor - Same as the Soler constructor
+ */
 Explicit::Explicit(double D, double Tin, double Tsun, double dt, double dx) : Solve::Solve(D, Tin, Tsun, dt, dx)
 {
 }
 
+//SOLVER METHOD
+/**
+ * Virtual method - Not defined here
+ */
 void Explicit::solve(double t) {
 }
 
+//TOOL METHOD
+/**
+ * Void methods that initialize T at t=0 and calculate T at t = dt
+ */
 void Explicit::OrderOne(Vector &T)
 {
     Vector temp(n);

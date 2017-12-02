@@ -20,10 +20,8 @@
  * \n-basic constructor that will be reused in all derivated class
  * \n-set and get function for each variable set by the user
  * \n-a virtual function solve() that will be use in the derived function
-to solve the problem
- * 
+to solve the problem 
  */
-
 class Solve
 {
 public:
