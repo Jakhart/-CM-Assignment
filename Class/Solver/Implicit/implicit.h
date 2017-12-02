@@ -40,6 +40,8 @@ public:
     //TOOL METHOD
     /**Void method that will change that will use the Vector T and calculate the first part of the thomas alrgorithm
     by changing the value of the vectors A and B that will be use in the derived class solve function
+     * 
+     * It has no interset to use this function in the Implicit class cause it uses parameters defined in the derived classes (a and b)
      */
     void Diagonalization(Vector &T);
 };

@@ -23,7 +23,7 @@ public:
     //SOLVER METHOD
     /**
      * Virtual methods that solve the problem for each scheme depending 
-    in which class the objet is define and print it in the consol.
+    in which class the objet is define and print the result in the consol.
      * \n Solve the problem using the DuFortFrankel scheme
      * @see OrderOne(Vector &T)
      */
