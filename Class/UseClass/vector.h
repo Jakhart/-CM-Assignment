@@ -12,7 +12,7 @@
 *  A vector class for data storage of a 1D array of doubles
 *  \n The implementation is derived from the standard container vector std::vector
 *  \n We use private inheritance to base our vector upon the library version whilst
-*  \nallowing usto expose only those base class functions we wish to use - in this
+*  \nallowing us to expose only those base class functions we wish to use - in this
 *  \ncase the array access operator []
 *
 * The Vector class provides:
@@ -112,62 +112,6 @@ public:
 	* @return double. vectors Lmax  norm
 	*/
 	double uniform_norm() const;
-
-
-	// KEYBOARD/SCREEN INPUT AND OUTPUT
-	/**
-	* Overloaded istream >> operator. Keyboard input
-	* if vector has size user will be asked to input only vector values
-	* if vector was not initialized user can choose vector size and input it values
-	* @see operator>>(std::ifstream& ifs, Vector& v)
-	* @see operator<<(std::ostream& os, const Vector& v)
-	* @see operator<<(std::ofstream& ofs, const Vector& v)
-	* @return std::istream&. the input stream object is
-	* @exception std::invalid_argument ("read error - negative vector size");
-	*/
-    friend std::istream& operator >> (std::istream& is, /**< keyboard input straem. For user input */
-		Vector& v /**< Vector&. vector to write to */
-		);
-
-
-	/**
-	* Overloaded ifstream << operator. Display output.
-	* @see operator>>(std::istream& is, Vector& v)
-	* @see operator>>(std::ifstream& ifs, Vector& v)
-	* @see operator<<(std::ofstream& ofs, const Vector& v)
-	* @return std::ostream&. the output stream object os
-	*/
-	friend std::ostream& operator<<(std::ostream& os, /**< output file stream */
-		const Vector& v /**< vector to read from */
-		);
-
-	/**
-	* Overloaded ifstream >> operator. File input
-	* the file output operator is compatible with file input operator,
-	* ie. everything written can be read later.
-	* @see operator>>(std::istream& is, Vector& v)
-	* @see operator<<(std::ostream& os, const Vector& v)
-	* @see operator<<(std::ofstream& ofs, const Vector& v)
-	* @return ifstream&. the input ifstream object ifs
-	* @exception std::invalid_argument ("file read error - negative vector size");
-	*/
-	friend std::ifstream& operator >> (std::ifstream& ifs, /**< input file straem. With opened matrix file */
-		Vector& v /**< Vector&. vector to write to */
-		);
-
-
-	/**
-	* Overloaded ofstream << operator. File output.
-	* the file output operator is compatible with file input operator,
-	* ie. everything written can be read later.
-	* @see operator>>(std::istream& is, Vector& v)
-	* @see operator>>(std::ifstream& ifs, Vector& v)
-	* @see operator<<(std::ostream& os, const Vector& v)
-	* @return std::ofstream&. the output ofstream object ofs
-	*/
-	friend std::ofstream& operator<<(std::ofstream& ofs, /**< outputfile stream. With opened file */
-		const Vector& v /**< Vector&. vector to read from */
-		);
 };
 
 #endif

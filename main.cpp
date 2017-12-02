@@ -7,7 +7,7 @@
 #include "Class/Solver/Implicit/implicit.h"
 #include "Class/Solver/Implicit/Crank-Nicholson/crankNicholson.h"
 #include "Class/Solver/Implicit/Laasonen/laasonen.h"
-#include "Class/Solver/Analitical/analitical.h"
+#include "Class/Solver/Analytical/analytical.h"
 
 int main(){
     // DuFortFrankel prob = DuFortFrankel(0.1, 100, 300, 0.01, 0.05);

@@ -13,7 +13,7 @@ void CrankNicholson::solve(double t)
     double tmax = t / this->dt;
     for (int i = 1; i < n-1; i++) Tpast[i] = Tin;
     Tpast[0] = Tpast[n-1] = Tnext[0] = Tnext[n-1] = Tsun;
-    std::cout << "Crank-Nidholson Result"<<"\n";
+    std::cout << "Crank-Nicholson Result"<<"\n";
     //Diagonalization(Tpast);
     for (int j = 1; j < tmax+1; j++)
     {
