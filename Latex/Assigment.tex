@@ -3,9 +3,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{array}
+\usepackage{caption} % for \captionof
 \author{Vincent Richard}
 \date{02/11/17}
 \title{Computtional Methods and C++ Assigment}
+\setlength\parindent{24pt}
 
 \begin{document}
 
@@ -26,6 +28,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    Introduction    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
+
 In this assignment we are asked to examine the application of numerical schemes
 for the solution of partial diferential equations. In order to  do so we will consider 
 the following probem.
@@ -92,8 +95,90 @@ This equation leads to a form that result in asystem of linear equation:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Methods Procedures      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Methods and Procedures}
- 
+\subsection{Code Structure}
 
+    To resolve the problem we decided to create a Oriented Object program base on 
+those figures (for readibility reason I divided the structure in three graphics):
+\begin{center}
+    \includegraphics[scale=0.6]{General.JPG}
+    \captionof{figure}{General Architecture}
+\end{center}
+%%%%%%%%%%%%% Solve
+The based class is \textbf{Solve}. It has a number of argument:
+\begin{itemize}
+    \item D the diffusivity which is in the assigment of $D = 0.1$  \textit{$ft^{2}$/hr}
+    \item dt the gap in time between n and n+1
+    \item dx the gap in space between i and i+1
+    \item Tin the initial temperature of the wall here $Tin = 100^{\circ}F$
+    \item Tsun the temperature on the two sides that are maintained at $Tsun = 300^{\circ}F$
+    \item L the lenght of the wall which is fix to 1 ft. in this exercice
+    \item n the number of possible position x for a fixed t, it calculated with $n = \frac{L}{dx}$
+\end{itemize}
 
+\vspace{0.3cm}
+It also has couples of methods:
+\begin{itemize}
+    \item Solve(double D, double dx, double dt, double Tsun, double Tin), the only constructor of 
+    this class and initialize the different value depending on the user input
+    \item solve(double t) a virtual methods that is created to be use in the derived class it will be the function
+    that solve and print the result of the problem.
+    \item get() / set() methods, basic accessor methods   
+\end{itemize}
+
+\vspace{0.3cm}
+The \textbf{Solve} class also have three derived class \textbf{Implicit}, \textbf{Explicit}, and \textbf{Analytical}.
+The \textbf{Implicit} and \textbf{Explicit} class are further details below. We will talk about the \textbf{Analytical} class.
+%%%%%%%%%%%%%%%% Analytical
+\vspace{0.3cm}
+
+The class \textbf{Analytical} calculate the analytical solution of the input problem.
+The class provided two new arguments:
+\begin{itemize}
+    \item m it is an integer used to simplify the expression of T since the anatical value of T is : 
+    \begin{equation}
+        T = T_{sur} + 2(T_{in}-T_{sur}) \sum_{m=1}^{m=\infty} e^{-D(m\pi /L)^{2}t} \frac{1-(-1)^{m}}{m\pi} sin(\frac{m\pi x}{L})
+    \end{equation}
+
+    So we need to get a smaller m for the upper border of the sum. We choosed to fix it at 10 000, 
+    the result obtain was close enought to make this simplification.
+
+    \item T it is a vector defined as an argument to initialize it in the constructor
+\end{itemize}
+The \textbf{Analytical} class has also two methods :
+\begin{itemize}
+    \item The constructor analytical(...) it is based on the constructor of the solve class, it also
+    initialize the value of m and the vector T
+    \item The solve function that is here defined to print the value of the analytical solution T 
+    of the problem with the approximation as explain above. It will print the value of T at each 0.1hr
+    until the argument t is reach
+\end{itemize}
+
+%%%%%%%%%%%%%%%% Vector
+\vspace{0.3cm}
+
+The \textbf{Vector} class is associated with the \textbf{Solve} class, it is use to defined 
+vector in the derived class.
+The methods of the vector class:
+\begin{itemize}
+    \item one\_norm
+    \item two\_norm
+    \item uniform\_norm
+\end{itemize}
+are used to compare the analytical and the different schemes methods.
+\begin{center}
+    \includegraphics[scale=0.6]{Explicit.JPG}
+    \captionof{figure}{Explicit Architecture}
+\end{center}
+%%%%%%%%%%%%%% Explicit
+
+The derived \textbf{Explicit} class is also a based class for two other class: the \textbf{DuFortFrankel}
+class and the \textbf{Richardson} class. Each of them solving the proble; with the scheme of the same name.
+
+\vspace{0.3cm}
+
+The \textbf{Explicit} class doesn't define any new argument and as the same methods as the \textbf{Solving} class
+\begin{center}
+    \includegraphics[scale=0.6]{Implicit.JPG}
+    \captionof{figure}{Implicit Architecture}
+\end{center}
 \end{document}
-
