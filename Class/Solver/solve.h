@@ -37,6 +37,12 @@ public:
     //CONSTRUCTORS
     /**
      * Default constructor. Initialize a Solve element
+    with the needed element set to 1
+    @see Solve(double D, double Tin, double Tsun, double dt, double dx)
+     */
+    Solve();
+    /**
+     * Initialize a Solve element
     with the needed element to solve the problem
      */
     Solve(double D, double Tin, double Tsun, double dt, double dx);

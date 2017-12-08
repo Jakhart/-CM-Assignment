@@ -8,7 +8,7 @@
  * \nSet a value of m high enough for the approximation to be relevant (here 10 000)
  * \nSet the solution vector T as null expect for the two bundary condition
  */
-Analytical::Analytical(double D, double Tin, double Tsun, double dt, double dx) : Solve::Solve(D, Tin, Tsun, dt, dx)
+Analytical::Analytical(double D, double Tin, double Tsun, double dt, double dx) : Solve(D, Tin, Tsun, dt, dx)
 {
     T = Vector(n);
     T[0] = T[n - 1] = Tsun;

@@ -16,7 +16,8 @@ public:
     //CONSTRUCTOR
     /**
      * Default constructor. Based on the Solve constructor
-     * @see Solve()
+     * @see Solve(double D, double Tin, double Tsun, double dt, double dx)
+     * @see Explicit(double D, double Tin, double Tsun, double dt, double dx)
      */
     Richardson(double D, double Tin, double Tsun, double dt, double dx);
 

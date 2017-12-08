@@ -4,7 +4,7 @@
 /**
  * Default constructor - Based on the Solver constructor
  */
-Richardson::Richardson(double D, double Tin, double Tsun, double dt, double dx) : Explicit::Explicit(D, Tin, Tsun, dt, dx)
+Richardson::Richardson(double D, double Tin, double Tsun, double dt, double dx) : Explicit(D, Tin, Tsun, dt, dx)
 {
 }
 

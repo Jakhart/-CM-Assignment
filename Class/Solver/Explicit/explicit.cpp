@@ -2,9 +2,16 @@
 
 //CONSTRUCTOR
 /**
- * Default constructor - Same as the Soler constructor
+ * Default constructor - Same as the Solver constructor
+ * set all the ele;ents to one
  */
-Explicit::Explicit(double D, double Tin, double Tsun, double dt, double dx) : Solve::Solve(D, Tin, Tsun, dt, dx)
+Explicit::Explicit():Solve()
+{
+}
+/**
+ * Same as the Solver constructor
+ */
+Explicit::Explicit(double D, double Tin, double Tsun, double dt, double dx) : Solve(D, Tin, Tsun, dt, dx)
 {
 }
 

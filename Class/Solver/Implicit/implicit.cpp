@@ -2,9 +2,17 @@
 
 // CONSTRUCTOR
 /**
+ * Default constructor - Same as the Solver constructor
+ * set all the value to one
+ */
+Implicit::Implicit() : Solve()
+{
+}
+
+/**
  * Constructor - Same as the Soler constructor, we initialise the two vectors A and B
  */
-Implicit::Implicit(double D, double Tin, double Tsun, double dt, double dx) : Solve::Solve(D, Tin, Tsun, dt, dx)
+Implicit::Implicit(double D, double Tin, double Tsun, double dt, double dx) : Solve(D, Tin, Tsun, dt, dx)
 {
     A = Vector(n);
     B = Vector(n);

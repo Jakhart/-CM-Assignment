@@ -17,8 +17,8 @@ public:
     //CONSTRUCTOR
     /**
      * Default constructor. Based on the Solve constructor and implicit constuctor
-     * @see Solve()
-     * @see Explicit()
+     * @see Solve(double D, double Tin, double Tsun, double dt, double dx)
+     * @see Implicit(double D, double Tin, double Tsun, double dt, double dx)
      */
     Laasonen(double D, double Tin, double Tsun, double dt, double dx);
 

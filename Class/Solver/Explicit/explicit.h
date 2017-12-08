@@ -20,8 +20,14 @@ class Explicit : public Solve {
 public:
     //CONSTRUCTOR
     /**
-     * Default constructor. Based on the Solve constructor
+     * Default constructor. Set all the value expect n to 0
      * @see Solve()
+     * @see Explicit(double D, double Tin, double Tsun, double dt, double dx)
+     */
+    Explicit();
+    /**
+     * Based on the Solve constructor
+     * @see Solve(double D, double Tin, double Tsun, double dt, double dx)
      */
     Explicit(double D, double Tin, double Tsun, double dt, double dx);
 

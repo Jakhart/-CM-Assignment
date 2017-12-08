@@ -2,6 +2,20 @@
 
 //CONSTRUCTOR
 /**
+ * Default constructor - Set all the value to 1
+ */
+Solve::Solve()
+{
+    this->D = 1;
+    this->Tin = 1;
+    this->Tsun = 1;
+    this->dt = 1;
+    this->dx = 1;
+    this->r = 1; 
+    L = 1; //the wall is 1 ft thick 
+    n = 1; //number of positon in between the two parts of the wall
+}
+/**
  * Default constructor -
  * \nSet the value of D, Tin, Tsun, dt, dx and L
 and create r and n which are to simplified calculation in the derived classes.
@@ -9,7 +23,7 @@ and create r and n which are to simplified calculation in the derived classes.
 Solve::Solve(double D, double Tin, double Tsun, double dt, double dx)
 {
     //set the data
-    this->D=D;
+    this->D = D;
     this->Tin = Tin;
     this->Tsun = Tsun;
     this->dt = dt;

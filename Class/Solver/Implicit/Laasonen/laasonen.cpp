@@ -6,7 +6,7 @@
  * We implement the value of a and b use in the Implicit class
  * @see Diagonalization(Vector &T)
  */
-Laasonen::Laasonen(double D, double Tin, double Tsun, double dt, double dx) : Implicit::Implicit(D, Tin, Tsun, dt, dx)
+Laasonen::Laasonen(double D, double Tin, double Tsun, double dt, double dx) : Implicit(D, Tin, Tsun, dt, dx)
 {
     this->b = 1 + 2 * r;
     this->a = -r;    
@@ -42,7 +42,7 @@ void Laasonen::solve(double t)
         }
         for (int i = 0; i < n; i++)
         {
-            Tpast[i+1] = Tnext[i+1];
+            Tpast[i] = Tnext[i];
 	    }
         //PRINTING THE RESULT FOR EVERY 0.1hrs
         if (j % 10 == 0)
