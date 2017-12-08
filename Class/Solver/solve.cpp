@@ -29,8 +29,8 @@ Solve::Solve(double D, double Tin, double Tsun, double dt, double dx)
     this->dt = dt;
     this->dx = dx;
     this->r = D * dt / (dx * dx); 
-    L = 1; //the wall is 1 ft thick 
-    n = L / dx; //number of positon in between the two parts of the wall
+    L = 1.0; //the wall is 1 ft thick 
+    n = std::ceil(L / dx) + 1; //number of positon in between the two parts of the wall 
 }
 
 //SOLVING METHODS

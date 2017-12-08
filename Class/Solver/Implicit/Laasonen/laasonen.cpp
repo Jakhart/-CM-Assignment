@@ -54,6 +54,9 @@ void Laasonen::solve(double t)
                 std::cout << Tnext[i] << " ";
             }
             std::cout << "\n";
+            std::cout << "Norm 1: " << Tnext.one_norm() << "\n";
+            std::cout << "Norm 2: " << Tnext.two_norm() << "\n";
+            std::cout << "Norm uniform: " << Tnext.uniform_norm() << "\n"; 
         }
     }
 };

@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{array}
 \usepackage{caption} % for \captionof
+\usepackage{amsmath}
 \author{Vincent Richard}
 \date{02/11/17}
 \title{Computtional Methods and C++ Assigment}
@@ -95,7 +96,6 @@ This equation leads to a form that result in asystem of linear equation:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Methods Procedures      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Methods and Procedures}
-\subsection{Code Structure}
 
     To resolve the problem we decided to create a Oriented Object program base on 
 those figures (for readibility reason I divided the structure in three graphics):
@@ -172,13 +172,116 @@ are used to compare the analytical and the different schemes methods.
 %%%%%%%%%%%%%% Explicit
 
 The derived \textbf{Explicit} class is also a based class for two other class: the \textbf{DuFortFrankel}
-class and the \textbf{Richardson} class. Each of them solving the proble; with the scheme of the same name.
+class and the \textbf{Richardson} class. Each of them solving the problem with the scheme of the same name.
 
 \vspace{0.3cm}
 
-The \textbf{Explicit} class doesn't define any new argument and as the same methods as the \textbf{Solving} class
-\begin{center}
+The \textbf{Explicit} class doesn't define any new argument and as the same methods has the \textbf{Solving}
+class. But it does define an aditionnal method. 
+
+The \textbf{OrderOne} method was created because in the two explicit schemes, DuFort-Frankel
+and Richardson, we encounter the issue of not being able to start the scheme at $n = 1$.
+To find a the value of the temperature T at a time n we need the value of T at n and n-1 (See equation (3) and (5))>.
+The problem set the values of T at $n = 0$ but we still need to find T at $n=1$ to use those
+schemes. So we first need the method \textbf{OrderOne} to find T at $n = 1$ with a forward time central
+space scheme, and then apply the Richardson and DuFort-Frankel scheme to find the other values 
+of T.
+
+Since this method is useful for both derived class, we decided to declare it in the 
+\textbf{Explicit} class.
+
+\vspace{0.3cm}
+
+The two derived classes \textbf{DuFortFrankel} and \textbf{Richardson} work the same way.
+
+They have the same constructor method based on the one defined in the \textbf{Explicit} class
+and they both defined the method \textbf{solve} in a very similar way. 
+
+Once the initialisation of T at $n = 0$ and $n = 1$ (with the \textbf{OrderOne} method) 
+is done, we use a loop on depending on the scheme the equation (3) or (5) until we reach 
+the value of t wanted by the user.
+%%%%%%%%%%%%%%%%% Implicit
+
+\begin{center} 
     \includegraphics[scale=0.6]{Implicit.JPG}
     \captionof{figure}{Implicit Architecture}
 \end{center}
+
+\vspace{0.3cm}
+
+The derived \textbf{Implicit} class is also a based class for two other class: the 
+\textbf{Laasonen} class and the \textbf{Cranck-Nicholson} class. Each of them solving 
+the problem with the scheme of the same name.
+
+The \textbf{Implicit} class just like the \textbf{Explicit} as a particular method to 
+simplify the solving of the problem in the two derived classes. To understand what the 
+\textbf{Diagonalization} method is used for we need to talk about
+the resolution of the problem for the two implicit schemes.
+
+\vspace{0.3cm}
+
+The two system of equation that we wrote in equation (7) and (8) can be written like this:
+
+\begin{equation}
+\begin{pmatrix} b    &    a   &    0   & \cdots &   0    \\
+a    & \ddots & \ddots & \ddots & \vdots \\
+0    & \ddots & \ddots & \ddots &    0   \\
+\vdots & \ddots & \ddots & \ddots &   a    \\ 
+0    & \cdots &    0   &   a    &    b   \\
+\end{pmatrix}
+=
+\begin{pmatrix} T_{0}^{n+1} \\ 
+\vdots \\ 
+T_{imax}^{n+1} \\
+\end{pmatrix}
+R
+\end{equation}
+Where a, b are doubles and P a vector, all of their values change depending on 
+which scheme we choose. Since the problem is a tri-diagonal matrix and for each scheme,
+we have (in the special case of the data given by the assigment) 
+$ 2\left \| a \right \| \leq \left \| b \right \| $ so we can use Thomas algorithm to
+solve those equation.
+
+Thomas Algorithm is an efficient way of solving tridiagonal matrix systems. It is based
+on LU decompositionin which the matrix system $Mx = r$ is rewritten as $LUx = r$ where L 
+is a lower triangular matrix and U is an upper triangular matrix. The system can be 
+efficiently solved by setting $Ux = p$ and then solving first $Lp = r$ for p and then 
+$Ux=p$ for x. The Thomas algorithm consist of two steps. In step one decomposing the matrix
+into $M=LU$ and solving $Lp=r$ are accomplished in a single downwards sweep, taking us
+straight from $Mx=r$ to $Ux=p$. In step two the equation $Ux=p$ is solved for x in  an
+upward sweep.
+
+In the \textbf{Diagonalization} we are taking care of the first step of the Thomas algorithm.
+We will have this kind of equation at the end of the method:
+
+\begin{equation}
+\begin{pmatrix} 1    &    B_{0}    & \cdots &   0    \\
+                0    & \ddots     & \ddots  & \vdots \\
+                \vdots & \ddots & \ddots & B_{imax - 1}  \\ 
+                0    & \cdots   &   0    &    1   \\
+\end{pmatrix}
+=
+\begin{pmatrix} T_{0}^{n+1} \\ 
+\vdots \\ 
+T_{imax}^{n+1} \\
+\end{pmatrix}
+P
+\end{equation}
+The values of $B_{i}$ and P will be stored respectively in the B vector and the A
+vector defined in the \textbf{Implicit} class.
+
+The function \textbf{solve} in both \textbf{Cranck-Nicholson} and \textbf{Laasonen} 
+is a loop that initialize the vector R (with the help of the equation (7) and (9),
+call the method \textbf{Diagonalization(R)} and then calculate the second step of the
+Thomas algorithm. It will print for each 0.1hr the value of T until the argument t of
+solve is reached.
+\quad
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%            RESULT             %%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Result}
+
+
+
+
+
 \end{document}

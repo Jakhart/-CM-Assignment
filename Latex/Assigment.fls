@@ -38,6 +38,16 @@ INPUT c:/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
 INPUT c:/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+INPUT c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT Assigment.aux
 INPUT Assigment.aux
 OUTPUT Assigment.aux
@@ -78,6 +88,9 @@ INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT Assigment.pdf
 INPUT c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
@@ -87,6 +100,8 @@ INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT Assigment.toc
 INPUT Assigment.toc
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT Assigment.toc
 INPUT Assigment.lof
 INPUT Assigment.lof

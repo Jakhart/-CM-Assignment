@@ -32,7 +32,7 @@ void Analytical::solve(double t)
     //CALCULATION
     for (int j = 1; j < tmax + 1; j++)
         {
-        double xs = dx; //Counter to keep track of the position
+        double xs = 0; //Counter to keep track of the position
         for (int i = 1; i < n - 1; i++)
         {
             double S = 0;//Initialisation of the sum
@@ -55,6 +55,9 @@ void Analytical::solve(double t)
                 std::cout << T[i] << " ";
             }
             std::cout << "\n";
+            std::cout << "Norm 1 :" << T.one_norm() << "\n";
+            std::cout << "Norm 2 :" << T.two_norm() << "\n";
+            std::cout << "Norm uniform :" << T.uniform_norm() << "\n";
         }
     }
 }

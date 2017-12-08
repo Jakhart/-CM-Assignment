@@ -43,6 +43,9 @@ void DuFortFrankel::solve(double t)
                 std::cout << T[i] << " ";
             }
             std::cout << "\n";
+            std::cout << "Norm 1: " << T.one_norm() << "\n";
+            std::cout << "Norm 2: " << T.two_norm() << "\n";
+            std::cout << "Norm uniform: " << T.uniform_norm() << "\n";            
         }
     }
 }
