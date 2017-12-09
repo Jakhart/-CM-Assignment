@@ -18,6 +18,9 @@ the first term needed to apply the schemes
  */
 class Explicit : public Solve {
 public:
+    Vector Tpast;
+    Vector T;
+    Vector Tnext;
     //CONSTRUCTOR
     /**
      * Default constructor. Set all the value expect n to 0

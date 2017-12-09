@@ -16,6 +16,10 @@ Implicit::Implicit(double D, double Tin, double Tsun, double dt, double dx) : So
 {
     A = Vector(n);
     B = Vector(n);
+    Tnext = Vector(n);
+    Tpast = Vector(n);
+    for (int i = 1; i < n-1; i++) Tpast[i] = Tin;
+    Tpast[0] = Tpast[n-1] = Tnext[0] = Tnext[n-1] = Tsun;
 }
 
 //SOLVER METHOD

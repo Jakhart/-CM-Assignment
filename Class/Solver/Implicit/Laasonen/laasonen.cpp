@@ -20,11 +20,7 @@ Laasonen::Laasonen(double D, double Tin, double Tsun, double dt, double dx) : Im
 void Laasonen::solve(double t)
 {
     //INITIALISATION
-    Vector Tnext(n);
-    Vector Tpast(n);
-    double tmax = t / this->dt;
-    for (int i = 1; i < n-1; i++) Tpast[i] = Tin;
-    Tpast[0] = Tpast[n-1] = Tnext[0] = Tnext[n-1] =Tsun;    
+    double tmax = t / this->dt;    
     std::cout << "Laasonen Result"<<"\n";
     //CALCULATION
     for (int j = 1; j < tmax+1; j++)

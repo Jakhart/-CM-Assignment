@@ -22,6 +22,8 @@ public:
     double b;
     Vector A;//In the eaution Ux = p A represent the vecot P
     Vector B;//B is the vecot of the upper diagonal matrix U all U[i][i+1]
+    Vector Tnext;
+    Vector Tpast;
 
     //CONSTRUCTOR
     /**

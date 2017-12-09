@@ -16,13 +16,8 @@ DuFortFrankel::DuFortFrankel(double D, double Tin, double Tsun, double dt, doubl
 void DuFortFrankel::solve(double t)
 {
     //INITIALISATION
-    Vector Tpast(n);
-    Vector T(n);
-    Vector Tnext(n);
     double tmax = t / this->dt;
     std::cout << "DuFort-Frankel Result"<<"\n";
-    for (int i = 0; i < n; i++) Tpast[i] = Tin;
-    Tpast[0] = Tpast[n-1] = Tnext[0] = Tnext[n-1] = Tsun;
     OrderOne(T);
     //CALCULATION OF T AT N+1
     for (int j = 2; j < tmax+1; j++)
@@ -42,10 +37,7 @@ void DuFortFrankel::solve(double t)
             {
                 std::cout << T[i] << " ";
             }
-            std::cout << "\n";
-            std::cout << "Norm 1: " << T.one_norm() << "\n";
-            std::cout << "Norm 2: " << T.two_norm() << "\n";
-            std::cout << "Norm uniform: " << T.uniform_norm() << "\n";            
+            std::cout << "\n";            
         }
     }
 }

@@ -13,6 +13,11 @@ Explicit::Explicit():Solve()
  */
 Explicit::Explicit(double D, double Tin, double Tsun, double dt, double dx) : Solve(D, Tin, Tsun, dt, dx)
 {
+    Tpast = Vector(n);
+    T = Vector(n);
+    Tnext = Vector(n);
+    for (int i = 0; i < n; i++) Tpast[i] = Tin;
+    Tpast[0] = Tpast[n-1] = Tnext[0] = Tnext[n-1] = Tsun;
 }
 
 //SOLVER METHOD
