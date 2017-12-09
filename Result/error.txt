@@ -1,0 +1,31 @@
+***********************
+Error Values for t =0.1
+DuFort Frankel Absolute Error: 62.0554,  Relative Error: 0.0192417
+Richardson Absolute Error: 2.29784e+006, Relative Error: 0.999856
+Laasonen Absolute Error: 43.3021, Relative Error: 0.0135053
+Crank-Nicholson Absolute Error: 134.79, Relative Error: 0.0445098
+***********************
+Error Values for t =0.2
+DuFort Frankel Absolute Error: 44.7815,  Relative Error: 0.0124646
+Richardson Absolute Error: 4.42919e+011, Relative Error: 1
+Laasonen Absolute Error: 30.9583, Relative Error: 0.00865032
+Crank-Nicholson Absolute Error: 276.633, Relative Error: 0.0845644
+***********************
+Error Values for t = 0.3
+DuFort Frankel Absolute Error: 37.0626,  Relative Error: 0.00956036
+Richardson Absolute Error: 9.68826e+016, Relative Error: 1
+Laasonen Absolute Error: 25.5142, Relative Error: 0.0066011
+Crank-Nicholson Absolute Error: 376.347, Relative Error: 0.108668
+***********************
+Error Values for t = 0.4
+DuFort Frankel Absolute Error: 32.4079,  Relative Error: 0.00787275
+Richardson Absolute Error: 2.23808e+022, Relative Error: 1
+Laasonen Absolute Error: 21.9471, Relative Error: 0.00534511
+Crank-Nicholson Absolute Error: 456.636, Relative Error: 0.125884
+
+***********************
+Error Values for t = 0.5
+DuFort Frankel Absolute Error: 29.1255,  Relative Error: 0.00673151
+Richardson Absolute Error: 5.32986e+027, Relative Error: 1
+Laasonen Absolute Error: 19.0404, Relative Error: 0.00441092
+Crank-Nicholson Absolute Error: 524.413, Relative Error: 0.138983
