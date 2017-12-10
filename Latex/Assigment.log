@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.4)  8 DEC 2017 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.4)  10 DEC 2017 11:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -571,11 +571,11 @@ c)
 \openout5 = `Assigment.lot'.
 
  [1] [2]
-<General.JPG, id=24, 659.46375pt x 362.5545pt>
-File: General.JPG Graphic file (type jpg)
-<use General.JPG>
-Package pdftex.def Info: General.JPG  used on input line 103. on input line 103
-.
+<Chart/General.JPG, id=24, 659.46375pt x 362.5545pt>
+File: Chart/General.JPG Graphic file (type jpg)
+<use Chart/General.JPG>
+Package pdftex.def Info: Chart/General.JPG  used on input line 103. on input li
+ne 103.
 Package pdftex.def Info: Requested size: 395.68129pt x 217.53438pt on input lin
 e 103.
 
@@ -590,47 +590,47 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
- [3 <./General.JPG>]
-<Explicit.JPG, id=29, 483.60675pt x 267.399pt>
-File: Explicit.JPG Graphic file (type jpg)
-<use Explicit.JPG>
-Package pdftex.def Info: Explicit.JPG  used on input line 169. on input line 16
-9.
+ [3 <./Chart/General.JPG>]
+<Chart/Explicit.JPG, id=29, 483.60675pt x 267.399pt>
+File: Chart/Explicit.JPG Graphic file (type jpg)
+<use Chart/Explicit.JPG>
+Package pdftex.def Info: Chart/Explicit.JPG  used on input line 171. on input l
+ine 171.
 Package pdftex.def Info: Requested size: 290.16628pt x 160.44063pt on input lin
-e 169.
-
+e 171.
 [4]
-<Implicit.JPG, id=35, 557.6835pt x 311.36325pt>
-File: Implicit.JPG Graphic file (type jpg)
-<use Implicit.JPG>
-Package pdftex.def Info: Implicit.JPG  used on input line 206. on input line 20
-6.
+<Chart/Implicit.JPG, id=35, 557.6835pt x 311.36325pt>
+File: Chart/Implicit.JPG Graphic file (type jpg)
+<use Chart/Implicit.JPG>
+Package pdftex.def Info: Chart/Implicit.JPG  used on input line 207. on input l
+ine 207.
 Package pdftex.def Info: Requested size: 334.61267pt x 186.81938pt on input lin
-e 206.
- [5 <./Explicit.JPG>] [6 <./Implicit.JPG>] [7] (./Assigment.aux) ) 
+e 207.
+ [5 <./Chart/Explicit.JPG>] [6 <./Chart/Implicit.JPG>] [7] (./Assigment.aux) ) 
 Here is how much of TeX's memory you used:
- 3570 strings out of 492990
- 51169 string characters out of 6136334
+ 3571 strings out of 492990
+ 51247 string characters out of 6136334
  116584 words of memory out of 5000000
  7072 multiletter control sequences out of 15000+600000
  9976 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,39p,317b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2017/texmf
--dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2017/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2017/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2017/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr9.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Assigment.pdf (8 pages, 350314 bytes).
+<
+c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2017/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2017/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2017/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti10.pfb>
+Output written on Assigment.pdf (8 pages, 350305 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream

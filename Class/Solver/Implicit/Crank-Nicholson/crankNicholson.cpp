@@ -29,7 +29,7 @@ void CrankNicholson::solve(double t)
         //Initialisation of b in Ax = b
         R[1] = r / 2 * Tpast[2] + (1 - r) * Tpast[1] + r / 2 * Tpast[0] + r / 2 * Tsun; //Initialisation of the vector b in the equation Ax=b
         R[n-2] = r / 2 * Tpast[n-1] + (1 - r) * Tpast[n-2] + r / 2 * Tpast[n-3] + r / 2 * Tsun;
-        for (int i = 2; i < n - 2; i++) R[i] =  r / 2 * Tpast[i] + (1 - r) * Tpast[i] + r / 2 * Tpast[i];
+        for (int i = 2; i < n - 2; i++) R[i] =  r / 2 * Tpast[i+1] + (1 - r) * Tpast[i] + r / 2 * Tpast[i-1];
         //Use Thomas' method
         Diagonalization(R);
         //Resolution of Ux = y

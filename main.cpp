@@ -58,7 +58,7 @@ int main(){
     std::cin >> scheme;
     std::cout << "Do you want to see the Absolute and Relative error ? (0: Yes, 1:No)\n";
     std::cin >> error;
-    std::cout << "This program will print the result considering Diffusity D = 0.1 ft²/hr, Tin = 100 F, Tsun = 300 F, dx = 0.05ft and L = 1ft" << "\n";
+    std::cout << "This program will print the result considering Diffusity D = 0.1 ft^2/hr, Tin = 100 F, Tsun = 300 F, dx = 0.05ft and L = 1ft" << "\n";
     std::cout << "Choose now which value of dt you want to choose and then until which time you want to solve the scheme\n" << "dt =";
     std::cin >> dt;
     std::cout << "\n You want to solve until t =";
