@@ -42,7 +42,7 @@ void CrankNicholson::solve(double t)
         {
             Tpast[i] = Tnext[i];
 	    }
-        //PRINTING THE RESULT FOR EVERY 0.1hrs
+        //PRINTING THE RESULT FOR EVERY 10*dt hrs
         if (j % 10 == 0)
         {
             std::cout << "******************************"<< "\n";

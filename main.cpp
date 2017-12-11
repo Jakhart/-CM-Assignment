@@ -13,7 +13,7 @@ int scheme;
 int error;
 double dt;
 double t;
-void diff(DuFortFrankel Df, Richardson Ri, Laasonen La, CrankNicholson Cr, Analytical Ana)
+void accuracy(DuFortFrankel Df, Richardson Ri, Laasonen La, CrankNicholson Cr, Analytical Ana)
 {
     std::cout << "\nError Values for t = " << t << "\n";
     Vector DfError = Vector(Ana.n);
@@ -106,6 +106,6 @@ int main(){
         std::cout << "\n";
     }
     //Error calculation
-    if(error == 0) diff(Dufortprob, Richprob, Laprob, Crprob, Anaprob);
+    if(error == 0) accuracy(Dufortprob, Richprob, Laprob, Crprob, Anaprob);
     return 0;
 }

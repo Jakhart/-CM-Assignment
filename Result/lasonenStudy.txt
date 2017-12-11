@@ -1,0 +1,13 @@
+Timer
+
+dt = 0.01       timer: 0.077       Error Values for t = 0.5 0.068
+Laasonen Absolute Error: 19.0404, Relative Error: 0.00441092
+
+dt = 0.025      timer: 0.148      Error Values for t = 0.5 0.036
+Laasonen Absolute Error: 40.99, Relative Error: 0.00951442
+
+dt = 0.05       timer: 0.046       Error Values for t = 0.5  0.032
+Laasonen Absolute Error: 78.7613, Relative Error: 0.0183419
+
+dt = 0.1        timer: 0.079       Error Values for t = 0.5  0.049   0.039
+Laasonen Absolute Error: 159.2359, Relative Error: 0.037333

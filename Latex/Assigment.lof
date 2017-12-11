@@ -1,3 +1,12 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces General Architecture\relax }}{3}
-\contentsline {figure}{\numberline {2}{\ignorespaces Explicit Architecture\relax }}{5}
-\contentsline {figure}{\numberline {3}{\ignorespaces Implicit Architecture\relax }}{6}
+\contentsline {figure}{\numberline {1}{\ignorespaces Representation of the initial problem\relax }}{3}
+\contentsline {figure}{\numberline {2}{\ignorespaces General Architecture\relax }}{5}
+\contentsline {figure}{\numberline {3}{\ignorespaces Explicit Architecture\relax }}{6}
+\contentsline {figure}{\numberline {4}{\ignorespaces Implicit Architecture\relax }}{7}
+\contentsline {figure}{\numberline {5}{\ignorespaces Analytical Result\relax }}{10}
+\contentsline {figure}{\numberline {6}{\ignorespaces DuFort-Frankel Result\relax }}{10}
+\contentsline {figure}{\numberline {7}{\ignorespaces Richardson Result\relax }}{11}
+\contentsline {figure}{\numberline {8}{\ignorespaces Laasonen Result\relax }}{11}
+\contentsline {figure}{\numberline {9}{\ignorespaces Cranck-Nicholson Result\relax }}{12}
+\contentsline {figure}{\numberline {10}{\ignorespaces Absolute Error Calculation\relax }}{12}
+\contentsline {figure}{\numberline {11}{\ignorespaces Relative Error Calculation\relax }}{13}
+\contentsline {figure}{\numberline {12}{\ignorespaces Absolute Error of the Laasonen scheme plotted against the step size\relax }}{14}

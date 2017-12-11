@@ -45,7 +45,7 @@ void Analytical::solve(double t)
         }
         ts = ts + dt;
 
-        //Print the result for every 0.1hr until t is reach
+        //Print the result for every 10*dt hr until t is reach
         if (j % 10 == 0)
         {
             std::cout << "******************************"<< "\n";

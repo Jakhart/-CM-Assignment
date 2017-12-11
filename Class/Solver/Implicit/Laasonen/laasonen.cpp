@@ -1,3 +1,4 @@
+#include <chrono>
 #include "laasonen.h"
 
 //CONSTRUCTOR
@@ -19,8 +20,10 @@ Laasonen::Laasonen(double D, double Tin, double Tsun, double dt, double dx) : Im
  */
 void Laasonen::solve(double t)
 {
+    //TIMER
+    auto begin = std::chrono::high_resolution_clock::now();
     //INITIALISATION
-    double tmax = t / this->dt;    
+    double tmax = t / this->dt;
     std::cout << "Laasonen Result"<<"\n";
     //CALCULATION
     for (int j = 1; j < tmax+1; j++)
@@ -40,7 +43,7 @@ void Laasonen::solve(double t)
         {
             Tpast[i] = Tnext[i];
 	    }
-        //PRINTING THE RESULT FOR EVERY 0.1hrs
+        // PRINTING THE RESULT FOR EVERY 10*dt hrs
         if (j % 10 == 0)
         {
             std::cout << "******************************"<< "\n";
@@ -52,4 +55,6 @@ void Laasonen::solve(double t)
             std::cout << "\n";
         }
     }
+    auto end = std::chrono::high_resolution_clock::now();
+    std::cout << "timer =" << std::chrono::duration_cast<std::chrono::nanoseconds>(end-begin).count() << "ns\n";
 };

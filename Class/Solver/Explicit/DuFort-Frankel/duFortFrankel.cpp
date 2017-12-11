@@ -28,7 +28,7 @@ void DuFortFrankel::solve(double t)
             Tpast[i] = T[i];
             T[i] = Tnext[i];
 	    }
-        //PRINTING THE RESULT FOR EVERY 0.1hrs
+        //PRINTING THE RESULT FOR EVERY 10*dt hrs
         if (j % 10 == 0)
         {
             std::cout << "******************************"<< "\n";

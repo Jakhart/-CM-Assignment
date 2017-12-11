@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.4)  10 DEC 2017 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.4)  11 DEC 2017 20:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -467,35 +467,83 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
+)
+(c:/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks23
+\verbatim@line=\toks24
+\verbatim@in@stream=\read1
+)
+(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count104
+\lst@gtempboxa=\box28
+\lst@token=\toks25
+\lst@length=\count105
+\lst@currlwidth=\dimen136
+\lst@column=\count106
+\lst@pos=\count107
+\lst@lostspace=\dimen137
+\lst@width=\dimen138
+\lst@newlines=\count108
+\lst@lineno=\count109
+\lst@maxwidth=\dimen139
+
+(c:/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count110
+\lst@skipnumbers=\count111
+\lst@framebox=\box29
+)
+(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(c:/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(c:/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(c:/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 ) (./Assigment.aux)
 \openout1 = `Assigment.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 (c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen136
-\scratchbox=\box28
-\nofMPsegments=\count105
-\nofMParguments=\count106
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen137
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count112
+\scratchdimen=\dimen140
+\scratchbox=\box30
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen141
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks27
 ) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -553,7 +601,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count118
  [1
 
 {c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Assigment.to
@@ -566,74 +616,736 @@ c)
 \tf@lof=\write4
 \openout4 = `Assigment.lof'.
 
- (./Assigment.lot)
-\tf@lot=\write5
-\openout5 = `Assigment.lot'.
-
- [1] [2]
-<Chart/General.JPG, id=24, 659.46375pt x 362.5545pt>
+ [1]
+<Chart/problem.PNG, id=14, 517.935pt x 556.0775pt>
+File: Chart/problem.PNG Graphic file (type png)
+<use Chart/problem.PNG>
+Package pdftex.def Info: Chart/problem.PNG  used on input line 75. on input lin
+e 75.
+Package pdftex.def Info: Requested size: 310.76338pt x 333.64908pt on input lin
+e 75.
+ [2] [3 <./Chart/problem.PNG>] [4]
+<Chart/General.JPG, id=35, 659.46375pt x 362.5545pt>
 File: Chart/General.JPG Graphic file (type jpg)
 <use Chart/General.JPG>
-Package pdftex.def Info: Chart/General.JPG  used on input line 103. on input li
-ne 103.
+Package pdftex.def Info: Chart/General.JPG  used on input line 137. on input li
+ne 137.
 Package pdftex.def Info: Requested size: 395.68129pt x 217.53438pt on input lin
-e 103.
+e 137.
 
-Overfull \hbox (50.68129pt too wide) in paragraph at lines 103--104
+Overfull \hbox (50.68129pt too wide) in paragraph at lines 137--138
  [] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 109.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 143.
 
 (c:/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
- [3 <./Chart/General.JPG>]
-<Chart/Explicit.JPG, id=29, 483.60675pt x 267.399pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
+ [5 <./Chart/General.JPG>]
+<Chart/Explicit.JPG, id=40, 483.60675pt x 267.399pt>
 File: Chart/Explicit.JPG Graphic file (type jpg)
 <use Chart/Explicit.JPG>
-Package pdftex.def Info: Chart/Explicit.JPG  used on input line 171. on input l
-ine 171.
+Package pdftex.def Info: Chart/Explicit.JPG  used on input line 206. on input l
+ine 206.
 Package pdftex.def Info: Requested size: 290.16628pt x 160.44063pt on input lin
-e 171.
-[4]
-<Chart/Implicit.JPG, id=35, 557.6835pt x 311.36325pt>
+e 206.
+[6 <./Chart/Explicit.JPG>]
+<Chart/Implicit.JPG, id=47, 557.6835pt x 311.36325pt>
 File: Chart/Implicit.JPG Graphic file (type jpg)
 <use Chart/Implicit.JPG>
-Package pdftex.def Info: Chart/Implicit.JPG  used on input line 207. on input l
-ine 207.
+Package pdftex.def Info: Chart/Implicit.JPG  used on input line 246. on input l
+ine 246.
 Package pdftex.def Info: Requested size: 334.61267pt x 186.81938pt on input lin
-e 207.
- [5 <./Chart/Explicit.JPG>] [6 <./Chart/Implicit.JPG>] [7] (./Assigment.aux) ) 
+e 246.
+ [7 <./Chart/Implicit.JPG>] [8] [9]
+<Chart/analytical.PNG, id=57, 695.59875pt x 349.305pt>
+File: Chart/analytical.PNG Graphic file (type png)
+<use Chart/analytical.PNG>
+Package pdftex.def Info: Chart/analytical.PNG  used on input line 364. on input
+ line 364.
+Package pdftex.def Info: Requested size: 347.79852pt x 174.65207pt on input lin
+e 364.
+
+Overfull \hbox (2.79852pt too wide) in paragraph at lines 364--365
+ [] 
+ []
+
+<Chart/duFortFrankel.PNG, id=58, 695.59875pt x 349.305pt>
+File: Chart/duFortFrankel.PNG Graphic file (type png)
+<use Chart/duFortFrankel.PNG>
+Package pdftex.def Info: Chart/duFortFrankel.PNG  used on input line 369. on in
+put line 369.
+Package pdftex.def Info: Requested size: 347.79852pt x 174.65207pt on input lin
+e 369.
+
+Overfull \hbox (2.79852pt too wide) in paragraph at lines 369--370
+ [] 
+ []
+
+<Chart/richardson.PNG, id=59, 695.59875pt x 349.305pt>
+File: Chart/richardson.PNG Graphic file (type png)
+<use Chart/richardson.PNG>
+Package pdftex.def Info: Chart/richardson.PNG  used on input line 374. on input
+ line 374.
+Package pdftex.def Info: Requested size: 347.79852pt x 174.65207pt on input lin
+e 374.
+
+Overfull \hbox (2.79852pt too wide) in paragraph at lines 374--375
+ [] 
+ []
+
+[10 <./Chart/analytical.PNG (PNG copy)> <./Chart/duFortFrankel.PNG (PNG copy)>]
+<Chart/laasonen.PNG, id=63, 695.59875pt x 349.305pt>
+File: Chart/laasonen.PNG Graphic file (type png)
+<use Chart/laasonen.PNG>
+Package pdftex.def Info: Chart/laasonen.PNG  used on input line 379. on input l
+ine 379.
+Package pdftex.def Info: Requested size: 347.79852pt x 174.65207pt on input lin
+e 379.
+
+Overfull \hbox (2.79852pt too wide) in paragraph at lines 379--380
+ [] 
+ []
+
+<Chart/crankNicholson.PNG, id=64, 718.685pt x 361.35pt>
+File: Chart/crankNicholson.PNG Graphic file (type png)
+<use Chart/crankNicholson.PNG>
+Package pdftex.def Info: Chart/crankNicholson.PNG  used on input line 384. on i
+nput line 384.
+Package pdftex.def Info: Requested size: 359.34161pt x 180.67456pt on input lin
+e 384.
+
+Overfull \hbox (14.34161pt too wide) in paragraph at lines 384--385
+ [] 
+ []
+
+[11 <./Chart/richardson.PNG (PNG copy)> <./Chart/laasonen.PNG (PNG copy)>]
+<Chart/AbsoluteError.PNG, id=68, 602.25pt x 372.39125pt>
+File: Chart/AbsoluteError.PNG Graphic file (type png)
+<use Chart/AbsoluteError.PNG>
+Package pdftex.def Info: Chart/AbsoluteError.PNG  used on input line 396. on in
+put line 396.
+Package pdftex.def Info: Requested size: 301.12425pt x 186.19516pt on input lin
+e 396.
+<Chart/RelativeError.PNG, id=69, 602.25pt x 372.39125pt>
+File: Chart/RelativeError.PNG Graphic file (type png)
+<use Chart/RelativeError.PNG>
+Package pdftex.def Info: Chart/RelativeError.PNG  used on input line 401. on in
+put line 401.
+Package pdftex.def Info: Requested size: 301.12425pt x 186.19516pt on input lin
+e 401.
+
+[12 <./Chart/crankNicholson.PNG (PNG copy)> <./Chart/AbsoluteError.PNG (PNG cop
+y)>] [13 <./Chart/RelativeError.PNG (PNG copy)>]
+<Chart/laasonenAE.PNG, id=77, 582.175pt x 292.09125pt>
+File: Chart/laasonenAE.PNG Graphic file (type png)
+<use Chart/laasonenAE.PNG>
+Package pdftex.def Info: Chart/laasonenAE.PNG  used on input line 436. on input
+ line 436.
+Package pdftex.def Info: Requested size: 291.08679pt x 146.04526pt on input lin
+e 436.
+ [14 <./Chart/laasonenAE.PNG (PNG copy)>] [15] (../main.cpp
+Overfull \hbox (51.89923pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.79932pt too wide) in paragraph at lines 6--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (64.4992pt too wide) in paragraph at lines 8--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (247.19885pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.79932pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (83.39917pt too wide) in paragraph at lines 23--24
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (83.39917pt too wide) in paragraph at lines 24--25
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (108.59912pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (108.59912pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (190.49896pt too wide) in paragraph at lines 28--29
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (215.69891pt too wide) in paragraph at lines 29--30
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.29901pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (209.39893pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[16]
+Overfull \hbox (152.69904pt too wide) in paragraph at lines 36--37
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (234.59888pt too wide) in paragraph at lines 37--38
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (196.79895pt too wide) in paragraph at lines 40--41
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (234.59888pt too wide) in paragraph at lines 41--42
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (190.49896pt too wide) in paragraph at lines 44--45
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (215.69891pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.29901pt too wide) in paragraph at lines 46--47
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (209.39893pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (152.69904pt too wide) in paragraph at lines 48--49
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (234.59888pt too wide) in paragraph at lines 49--50
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (196.79895pt too wide) in paragraph at lines 50--51
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (234.59888pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (133.79907pt too wide) in paragraph at lines 56--57
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (423.59851pt too wide) in paragraph at lines 57--58
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+
+ []
+
+
+Overfull \hbox (215.69891pt too wide) in paragraph at lines 59--60
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (612.59814pt too wide) in paragraph at lines 61--62
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (499.19836pt too wide) in paragraph at lines 62--63
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][] 
+ []
+
+
+Overfull \hbox (39.29926pt too wide) in paragraph at lines 67--68
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (95.99915pt too wide) in paragraph at lines 72--73
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.59924pt too wide) in paragraph at lines 78--79
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[17]
+Overfull \hbox (7.79932pt too wide) in paragraph at lines 84--85
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (83.39917pt too wide) in paragraph at lines 90--91
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (127.49908pt too wide) in paragraph at lines 109--110
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../Class/Solver/solve.cpp
+Overfull \hbox (77.09918pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[18]
+Overfull \hbox (146.39905pt too wide) in paragraph at lines 21--22
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (89.69916pt too wide) in paragraph at lines 23--24
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
+ []
+
+
+Overfull \hbox (203.09894pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][] 
+ []
+
+[19] [20]) (../Class/Useclass/vector.cpp
+Overfull \hbox (51.89923pt too wide) in paragraph at lines 6--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (20.39929pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (20.39929pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.29926pt too wide) in paragraph at lines 36--37
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[21]
+Overfull \hbox (1.49933pt too wide) in paragraph at lines 57--58
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (228.29889pt too wide) in paragraph at lines 68--69
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (253.49883pt too wide) in paragraph at lines 70--71
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[22]
+Overfull \hbox (77.09918pt too wide) in paragraph at lines 115--117
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../Class/Solver/Analytical/analytical.cpp
+Overfull \hbox (184.19897pt too wide) in paragraph at lines 8--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (127.49908pt too wide) in paragraph at lines 9--10
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (341.69867pt too wide) in paragraph at lines 11--12
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (83.39917pt too wide) in paragraph at lines 21--22
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (64.4992pt too wide) in paragraph at lines 23--24
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][] 
+ []
+
+[23]
+Overfull \hbox (234.59888pt too wide) in paragraph at lines 28--29
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.59924pt too wide) in paragraph at lines 29--30
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.59924pt too wide) in paragraph at lines 35--36
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (429.8985pt too wide) in paragraph at lines 42--43
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][] 
+ []
+
+
+Overfull \hbox (45.59924pt too wide) in paragraph at lines 48--49
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (64.4992pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../Class/Solver/Explicit/explicit.cpp
+Overfull \hbox (1.49933pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][] 
+ []
+
+[24]
+Overfull \hbox (316.49872pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.0993pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (70.7992pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (83.39917pt too wide) in paragraph at lines 44--45
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][] 
+ []
+
+) (../Class/Solver/Implicit/implicit.cpp
+Overfull \hbox (1.49933pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][] 
+ []
+
+[25]
+Overfull \hbox (190.49896pt too wide) in paragraph at lines 13--14
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (316.49872pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.0993pt too wide) in paragraph at lines 22--23
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (89.69916pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (70.7992pt too wide) in paragraph at lines 41--42
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][] 
+ []
+
+) (../Class/Solver/Explicit/DuFort-Frankel/duFortFrankel.cpp
+Overfull \hbox (7.79932pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (398.39856pt too wide) in paragraph at lines 7--8
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[26]
+Overfull \hbox (599.99817pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (64.4992pt too wide) in paragraph at lines 34--35
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../Class/Solver/Explicit/Richardson/richardson.cpp
+Overfull \hbox (7.79932pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (360.59863pt too wide) in paragraph at lines 7--8
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[27]
+Overfull \hbox (329.0987pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][] 
+ []
+
+
+Overfull \hbox (64.4992pt too wide) in paragraph at lines 34--35
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../Class/Solver/Implicit/Laasonen/laasonen.cpp
+Overfull \hbox (89.69916pt too wide) in paragraph at lines 6--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.59924pt too wide) in paragraph at lines 7--8
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][] 
+ []
+
+
+Overfull \hbox (335.39868pt too wide) in paragraph at lines 10--11
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (26.69928pt too wide) in paragraph at lines 24--25
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+[28]
+Overfull \hbox (70.7992pt too wide) in paragraph at lines 31--32
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][] 
+ []
+
+
+Overfull \hbox (64.4992pt too wide) in paragraph at lines 49--50
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.0993pt too wide) in paragraph at lines 58--59
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (360.59863pt too wide) in paragraph at lines 59--60
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../Class/Solver/Implicit/Crank-Nicholson/crankNicholson.cpp
+Overfull \hbox (89.69916pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.59924pt too wide) in paragraph at lines 6--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][] 
+ []
+
+
+Overfull \hbox (410.99854pt too wide) in paragraph at lines 9--10
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[29]
+Overfull \hbox (543.29828pt too wide) in paragraph at lines 30--31
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
+ []
+
+
+Overfull \hbox (253.49884pt too wide) in paragraph at lines 31--32
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (341.69867pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][] 
+ []
+
+
+Overfull \hbox (64.4992pt too wide) in paragraph at lines 48--49
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [30] (./Assigment.aux) ) 
 Here is how much of TeX's memory you used:
- 3571 strings out of 492990
- 51247 string characters out of 6136334
- 116584 words of memory out of 5000000
- 7072 multiletter control sequences out of 15000+600000
- 9976 words of font info for 36 fonts, out of 8000000 for 9000
+ 5700 strings out of 492990
+ 79906 string characters out of 6136334
+ 202270 words of memory out of 5000000
+ 9129 multiletter control sequences out of 15000+600000
+ 10982 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,39p,317b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
-<
-c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2017/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2017/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2017/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2017/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mti10.pfb>
-Output written on Assigment.pdf (8 pages, 350305 bytes).
+ 41i,9n,58p,317b,1643s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c
+:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2017/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi9.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><
+c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2017/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy5.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Assigment.pdf (31 pages, 666286 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 199 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
