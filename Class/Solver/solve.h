@@ -26,8 +26,8 @@ class Solve
 {
 public:
     double D; //the Diffusity
-    double Tin; //Initial temperature 100°F in the Assigment
-    double Tsun; //Surface temperature 300°F inthe Assigment
+    double Tin; //Initial temperature 100F in the Assigment
+    double Tsun; //Surface temperature 300F inthe Assigment
     double dt;
     double dx;
     double r; //calculation simplificator

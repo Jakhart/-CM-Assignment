@@ -5,10 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CMAssigment: Class/Solver/Analytical/analytical.h Source File</title>
+<title>Assigment: Solver/Analytical/analytical.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +28,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CMAssigment
-   &#160;<span id="projectnumber">1.0</span>
+   <div id="projectname">Assigment
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -43,6 +50,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('analytical_8h_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -57,27 +79,33 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_f02245bc0c6328b148642eb0eac858dc.html">Class</a></li><li class="navelem"><a class="el" href="dir_06d17b01ebb445465ebcb688f3dc4f22.html">Solver</a></li><li class="navelem"><a class="el" href="dir_b148d6bd0e72de531ee963e2874abe78.html">Analytical</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">analytical.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ANALYTICAL_H //Include guard</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ANALYTICAL_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span>  <span class="comment">//generic IO</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span>   <span class="comment">//file IO</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span> <span class="comment">//provides exception</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../solve.h&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_analytical.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_analytical.html">Analytical</a> : <span class="keyword">public</span> <a class="code" href="class_solve.html">Solve</a> {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_vector.html">Vector</a> T;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> m;<span class="comment">//We remplace the infinity in the expression of the analytical T by m</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//CONSTRUCTORS</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span>    <a class="code" href="class_analytical.html#a5a2be7809dfe198c5d6bdc5b6448f75b">Analytical</a>(<span class="keywordtype">double</span> D, <span class="keywordtype">double</span> Tin, <span class="keywordtype">double</span> Tsun, <span class="keywordtype">double</span> dt, <span class="keywordtype">double</span> dx);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//SOLVING METHOD</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_analytical.html#a8fe1d5769bb516115a31719222eb9ae5">solve</a>(<span class="keywordtype">double</span> t);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_analytical_html"><div class="ttname"><a href="class_analytical.html">Analytical</a></div><div class="ttdef"><b>Definition:</b> analytical.h:22</div></div>
+<a href="analytical_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ANALYTICAL_H //Include guard</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ANALYTICAL_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span>  <span class="comment">//generic IO</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span>   <span class="comment">//file IO</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span> <span class="comment">//provides exception</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../solve.h&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_analytical.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_analytical.html">Analytical</a> : <span class="keyword">public</span> <a class="code" href="class_solve.html">Solve</a> {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_analytical.html#abee1da12ac56489506088600823328eb">   24</a></span>&#160;    <a class="code" href="class_vector.html">Vector</a> <a class="code" href="class_analytical.html#abee1da12ac56489506088600823328eb">T</a>;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_analytical.html#a3a6b8bb5c9985bdfba024ecc378fef14">   25</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_analytical.html#a3a6b8bb5c9985bdfba024ecc378fef14">m</a>;<span class="comment">//We remplace the infinity in the expression of the analytical T by m</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//CONSTRUCTORS</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span>    <a class="code" href="class_analytical.html#a5a2be7809dfe198c5d6bdc5b6448f75b">Analytical</a>(<span class="keywordtype">double</span> <a class="code" href="class_solve.html#ab6b73352e9bca73bad1b133fc84f008c">D</a>, <span class="keywordtype">double</span> <a class="code" href="class_solve.html#a324c747af91a26a206d7772853b8655e">Tin</a>, <span class="keywordtype">double</span> <a class="code" href="class_solve.html#a7145536b49fb1ac4d2f36f800d118616">Tsun</a>, <span class="keywordtype">double</span> <a class="code" href="class_solve.html#ac1befb9c006f895fb0517e19c412ca57">dt</a>, <span class="keywordtype">double</span> <a class="code" href="class_solve.html#a21b9b8118f508e079f066d2ce2816dd1">dx</a>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//SOLVING METHOD</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_analytical.html#a8fe1d5769bb516115a31719222eb9ae5">solve</a>(<span class="keywordtype">double</span> t);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_analytical_html"><div class="ttname"><a href="class_analytical.html">Analytical</a></div><div class="ttdef"><b>Definition:</b> analytical.h:22</div></div>
 <div class="ttc" id="class_analytical_html_a5a2be7809dfe198c5d6bdc5b6448f75b"><div class="ttname"><a href="class_analytical.html#a5a2be7809dfe198c5d6bdc5b6448f75b">Analytical::Analytical</a></div><div class="ttdeci">Analytical(double D, double Tin, double Tsun, double dt, double dx)</div><div class="ttdef"><b>Definition:</b> analytical.cpp:11</div></div>
+<div class="ttc" id="class_solve_html_a324c747af91a26a206d7772853b8655e"><div class="ttname"><a href="class_solve.html#a324c747af91a26a206d7772853b8655e">Solve::Tin</a></div><div class="ttdeci">double Tin</div><div class="ttdef"><b>Definition:</b> solve.h:29</div></div>
+<div class="ttc" id="class_solve_html_ab6b73352e9bca73bad1b133fc84f008c"><div class="ttname"><a href="class_solve.html#ab6b73352e9bca73bad1b133fc84f008c">Solve::D</a></div><div class="ttdeci">double D</div><div class="ttdef"><b>Definition:</b> solve.h:28</div></div>
+<div class="ttc" id="class_solve_html_ac1befb9c006f895fb0517e19c412ca57"><div class="ttname"><a href="class_solve.html#ac1befb9c006f895fb0517e19c412ca57">Solve::dt</a></div><div class="ttdeci">double dt</div><div class="ttdef"><b>Definition:</b> solve.h:31</div></div>
 <div class="ttc" id="class_analytical_html_a8fe1d5769bb516115a31719222eb9ae5"><div class="ttname"><a href="class_analytical.html#a8fe1d5769bb516115a31719222eb9ae5">Analytical::solve</a></div><div class="ttdeci">void solve(double t)</div><div class="ttdef"><b>Definition:</b> analytical.cpp:25</div></div>
+<div class="ttc" id="class_solve_html_a21b9b8118f508e079f066d2ce2816dd1"><div class="ttname"><a href="class_solve.html#a21b9b8118f508e079f066d2ce2816dd1">Solve::dx</a></div><div class="ttdeci">double dx</div><div class="ttdef"><b>Definition:</b> solve.h:32</div></div>
 <div class="ttc" id="class_solve_html"><div class="ttname"><a href="class_solve.html">Solve</a></div><div class="ttdef"><b>Definition:</b> solve.h:25</div></div>
 <div class="ttc" id="class_vector_html"><div class="ttname"><a href="class_vector.html">Vector</a></div><div class="ttdef"><b>Definition:</b> vector.h:24</div></div>
+<div class="ttc" id="class_analytical_html_a3a6b8bb5c9985bdfba024ecc378fef14"><div class="ttname"><a href="class_analytical.html#a3a6b8bb5c9985bdfba024ecc378fef14">Analytical::m</a></div><div class="ttdeci">int m</div><div class="ttdef"><b>Definition:</b> analytical.h:25</div></div>
+<div class="ttc" id="class_analytical_html_abee1da12ac56489506088600823328eb"><div class="ttname"><a href="class_analytical.html#abee1da12ac56489506088600823328eb">Analytical::T</a></div><div class="ttdeci">Vector T</div><div class="ttdef"><b>Definition:</b> analytical.h:24</div></div>
+<div class="ttc" id="class_solve_html_a7145536b49fb1ac4d2f36f800d118616"><div class="ttname"><a href="class_solve.html#a7145536b49fb1ac4d2f36f800d118616">Solve::Tsun</a></div><div class="ttdeci">double Tsun</div><div class="ttdef"><b>Definition:</b> solve.h:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bbfb5cf133b5ee2ba5207ad49be3b96c.html">Solver</a></li><li class="navelem"><a class="el" href="dir_e5f7a76f03ba4a3f057f85d64e7e657a.html">Analytical</a></li><li class="navelem"><a class="el" href="analytical_8h.html">analytical.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

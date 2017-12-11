@@ -13,7 +13,9 @@ Inheritance diagram for Implicit\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_implicit_afe5ef51232ab8925009f584c679bdfce}{Implicit} (double D, double Tin, double Tsun, double dt, double dx)
+\hyperlink{class_implicit_a5a98f30bdf419368901ce9468a7065a3}{Implicit} ()
+\item 
+\hyperlink{class_implicit_afe5ef51232ab8925009f584c679bdfce}{Implicit} (double \hyperlink{class_solve_ab6b73352e9bca73bad1b133fc84f008c}{D}, double \hyperlink{class_solve_a324c747af91a26a206d7772853b8655e}{Tin}, double \hyperlink{class_solve_a7145536b49fb1ac4d2f36f800d118616}{Tsun}, double \hyperlink{class_solve_ac1befb9c006f895fb0517e19c412ca57}{dt}, double \hyperlink{class_solve_a21b9b8118f508e079f066d2ce2816dd1}{dx})
 \item 
 void \hyperlink{class_implicit_a027adb4276376991f75fcffbd34740b3}{solve} (double t)
 \item 
@@ -22,17 +24,17 @@ void \hyperlink{class_implicit_a572fff2232977c83c432f993f37a7853}{Diagonalizatio
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_implicit_a58a95622ffc58ae2f468d3ef4f0d215c}\label{class_implicit_a58a95622ffc58ae2f468d3ef4f0d215c}} 
-double {\bfseries a}
+double \hyperlink{class_implicit_a58a95622ffc58ae2f468d3ef4f0d215c}{a}
 \item 
-\mbox{\Hypertarget{class_implicit_a270615b52e1106f89b4e6ef928cc12de}\label{class_implicit_a270615b52e1106f89b4e6ef928cc12de}} 
-double {\bfseries b}
+double \hyperlink{class_implicit_a270615b52e1106f89b4e6ef928cc12de}{b}
 \item 
-\mbox{\Hypertarget{class_implicit_a5bdc685b164fc363d26ed1461c0d49b2}\label{class_implicit_a5bdc685b164fc363d26ed1461c0d49b2}} 
-\hyperlink{class_vector}{Vector} {\bfseries A}
+\hyperlink{class_vector}{Vector} \hyperlink{class_implicit_a5bdc685b164fc363d26ed1461c0d49b2}{A}
 \item 
-\mbox{\Hypertarget{class_implicit_a3f9c9eda634c19c2301698fd81ec5a6b}\label{class_implicit_a3f9c9eda634c19c2301698fd81ec5a6b}} 
-\hyperlink{class_vector}{Vector} {\bfseries B}
+\hyperlink{class_vector}{Vector} \hyperlink{class_implicit_a3f9c9eda634c19c2301698fd81ec5a6b}{B}
+\item 
+\hyperlink{class_vector}{Vector} \hyperlink{class_implicit_a854215cf2128a1dc1f532bb6664b472c}{Tnext}
+\item 
+\hyperlink{class_vector}{Vector} \hyperlink{class_implicit_a6cd9e0093600402e8bc3b22995aa96b1}{Tpast}
 \end{DoxyCompactItemize}
 
 
@@ -43,19 +45,30 @@ The \hyperlink{class_implicit}{Implicit} class provides\+: ~\newline
 -\/basic constructor derived from \hyperlink{class_solve}{Solve} ~\newline
 -\/a virtual function \hyperlink{class_implicit_a027adb4276376991f75fcffbd34740b3}{solve()} that will be use in the derived function to solve the problem ~\newline
 -\/a \begin{DoxySeeAlso}{See also}
-\hyperlink{class_implicit_a572fff2232977c83c432f993f37a7853}{Diagonalization(\+Vector \&\+T)} function that will be used in both derived class to calculate the first part of the thomas Algorithm (\hyperlink{class_implicit_a572fff2232977c83c432f993f37a7853}{Diagonalization} and resolving the equation Ly = b ) 
+\hyperlink{class_implicit_a572fff2232977c83c432f993f37a7853}{Diagonalization(\+Vector \&\+T)} function that will be used in both derived class to calculate the first part of the thomas Algorithm (\hyperlink{class_implicit_a572fff2232977c83c432f993f37a7853}{Diagonalization} and resolving the equation Ly = \hyperlink{class_implicit_a270615b52e1106f89b4e6ef928cc12de}{b} ) 
 \end{DoxySeeAlso}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_implicit_afe5ef51232ab8925009f584c679bdfce}\label{class_implicit_afe5ef51232ab8925009f584c679bdfce}} 
+\mbox{\Hypertarget{class_implicit_a5a98f30bdf419368901ce9468a7065a3}\label{class_implicit_a5a98f30bdf419368901ce9468a7065a3}} 
 \index{Implicit@{Implicit}!Implicit@{Implicit}}
 \index{Implicit@{Implicit}!Implicit@{Implicit}}
-\subsubsection{\texorpdfstring{Implicit()}{Implicit()}}
+\subsubsection{\texorpdfstring{Implicit()}{Implicit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Implicit\+::\+Implicit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor. Set all the value expect n to 0 \begin{DoxySeeAlso}{See also}
+\hyperlink{class_solve_ac437f1307c9d4669205ac7d370a55ffc}{Solve()} 
+
+\hyperlink{class_implicit_afe5ef51232ab8925009f584c679bdfce}{Implicit(double D, double Tin, double Tsun, double dt, double dx)}
+\end{DoxySeeAlso}
+Default constructor -\/ Same as the Solver constructor set all the value to one \mbox{\Hypertarget{class_implicit_afe5ef51232ab8925009f584c679bdfce}\label{class_implicit_afe5ef51232ab8925009f584c679bdfce}} 
+\index{Implicit@{Implicit}!Implicit@{Implicit}}
+\index{Implicit@{Implicit}!Implicit@{Implicit}}
+\subsubsection{\texorpdfstring{Implicit()}{Implicit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Implicit\+::\+Implicit (\begin{DoxyParamCaption}\item[{double}]{D,  }\item[{double}]{Tin,  }\item[{double}]{Tsun,  }\item[{double}]{dt,  }\item[{double}]{dx }\end{DoxyParamCaption})}
 
-Default constructor. Based on the \hyperlink{class_solve}{Solve} constructor \begin{DoxySeeAlso}{See also}
-\hyperlink{class_solve_a1e0efad6dcf6b09759dd38df7aa08db8}{Solve()}
+Based on the \hyperlink{class_solve}{Solve} constructor \begin{DoxySeeAlso}{See also}
+\hyperlink{class_solve_a1e0efad6dcf6b09759dd38df7aa08db8}{Solve(double D, double Tin, double Tsun, double dt, double dx)}
 \end{DoxySeeAlso}
 Constructor -\/ Same as the Soler constructor, we initialise the two vectors A and B 
 
@@ -88,7 +101,46 @@ Reimplemented in \hyperlink{class_laasonen_aaa49ab7d15fbfef94a57a0e89977d1c6}{La
 
 
 
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_implicit_a58a95622ffc58ae2f468d3ef4f0d215c}\label{class_implicit_a58a95622ffc58ae2f468d3ef4f0d215c}} 
+\index{Implicit@{Implicit}!a@{a}}
+\index{a@{a}!Implicit@{Implicit}}
+\subsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily double Implicit\+::a}
+
+\mbox{\Hypertarget{class_implicit_a5bdc685b164fc363d26ed1461c0d49b2}\label{class_implicit_a5bdc685b164fc363d26ed1461c0d49b2}} 
+\index{Implicit@{Implicit}!A@{A}}
+\index{A@{A}!Implicit@{Implicit}}
+\subsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily \hyperlink{class_vector}{Vector} Implicit\+::A}
+
+\mbox{\Hypertarget{class_implicit_a270615b52e1106f89b4e6ef928cc12de}\label{class_implicit_a270615b52e1106f89b4e6ef928cc12de}} 
+\index{Implicit@{Implicit}!b@{b}}
+\index{b@{b}!Implicit@{Implicit}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily double Implicit\+::b}
+
+\mbox{\Hypertarget{class_implicit_a3f9c9eda634c19c2301698fd81ec5a6b}\label{class_implicit_a3f9c9eda634c19c2301698fd81ec5a6b}} 
+\index{Implicit@{Implicit}!B@{B}}
+\index{B@{B}!Implicit@{Implicit}}
+\subsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily \hyperlink{class_vector}{Vector} Implicit\+::B}
+
+\mbox{\Hypertarget{class_implicit_a854215cf2128a1dc1f532bb6664b472c}\label{class_implicit_a854215cf2128a1dc1f532bb6664b472c}} 
+\index{Implicit@{Implicit}!Tnext@{Tnext}}
+\index{Tnext@{Tnext}!Implicit@{Implicit}}
+\subsubsection{\texorpdfstring{Tnext}{Tnext}}
+{\footnotesize\ttfamily \hyperlink{class_vector}{Vector} Implicit\+::\+Tnext}
+
+\mbox{\Hypertarget{class_implicit_a6cd9e0093600402e8bc3b22995aa96b1}\label{class_implicit_a6cd9e0093600402e8bc3b22995aa96b1}} 
+\index{Implicit@{Implicit}!Tpast@{Tpast}}
+\index{Tpast@{Tpast}!Implicit@{Implicit}}
+\subsubsection{\texorpdfstring{Tpast}{Tpast}}
+{\footnotesize\ttfamily \hyperlink{class_vector}{Vector} Implicit\+::\+Tpast}
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Class/\+Solver/\+Implicit/implicit.\+h\item 
-Class/\+Solver/\+Implicit/implicit.\+cpp\end{DoxyCompactItemize}
+Solver/\+Implicit/\hyperlink{implicit_8h}{implicit.\+h}\item 
+Solver/\+Implicit/\hyperlink{implicit_8cpp}{implicit.\+cpp}\end{DoxyCompactItemize}

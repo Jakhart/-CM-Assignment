@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['getd',['getD',['../class_solve.html#a0edcf69bae8414576fbb1b35ba395a1c',1,'Solve']]],
-  ['getdt',['getdt',['../class_solve.html#a981e11c3c390bc54041a8e60ebdcc4bf',1,'Solve']]],
-  ['getdx',['getdx',['../class_solve.html#aad066a37070623f3c1bfb5f001fd2a50',1,'Solve']]],
-  ['getsize',['getSize',['../class_vector.html#afbb7966ec4107c43ec15cccc47fcaef7',1,'Vector']]],
-  ['gettin',['getTin',['../class_solve.html#a7d9d481ed1bf8bbfc5bf37517e2a12c6',1,'Solve']]],
-  ['gettsun',['getTsun',['../class_solve.html#afad3694fc830b80135a316eea2c0c279',1,'Solve']]]
+  ['explicit',['Explicit',['../class_explicit.html',1,'Explicit'],['../class_explicit.html#a7534f9c32911234d06bec7f47ad7596e',1,'Explicit::Explicit()'],['../class_explicit.html#ab5b890fae2ea8a91c95e9a15f552f36a',1,'Explicit::Explicit(double D, double Tin, double Tsun, double dt, double dx)']]],
+  ['explicit_2ecpp',['explicit.cpp',['../explicit_8cpp.html',1,'']]],
+  ['explicit_2eh',['explicit.h',['../explicit_8h.html',1,'']]]
 ];

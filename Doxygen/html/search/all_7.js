@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['one_5fnorm',['one_norm',['../class_vector.html#a6752a90058ddef427ca6aed12946a737',1,'Vector']]],
-  ['operator_3d',['operator=',['../class_vector.html#ae48c467a9f65d60e2f7455aba4ca1239',1,'Vector']]],
-  ['operator_3d_3d',['operator==',['../class_vector.html#ade5fbd0cd01b034d1907e0c93433320c',1,'Vector']]],
-  ['orderone',['OrderOne',['../class_explicit.html#a6069720017eb2bb0d989b2557c162c97',1,'Explicit']]]
+  ['l',['L',['../class_solve.html#a95de020d455d886e667b8307d7efed55',1,'Solve']]],
+  ['laasonen',['Laasonen',['../class_laasonen.html',1,'Laasonen'],['../class_laasonen.html#ad20d5e371558ef7c4f04f730daef0049',1,'Laasonen::Laasonen()']]],
+  ['laasonen_2ecpp',['laasonen.cpp',['../laasonen_8cpp.html',1,'']]],
+  ['laasonen_2eh',['laasonen.h',['../laasonen_8h.html',1,'']]]
 ];

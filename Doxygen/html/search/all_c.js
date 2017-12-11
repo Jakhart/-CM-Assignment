@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['vector',['Vector',['../class_vector.html',1,'Vector'],['../class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5',1,'Vector::Vector()'],['../class_vector.html#acbdf66550f2caa0a64e0b356fb63a277',1,'Vector::Vector(int Num)'],['../class_vector.html#a5f04e343b7306ad11f8a82c89b486764',1,'Vector::Vector(const Vector &amp;v)']]]
+  ['r',['r',['../class_solve.html#a8007aa7266c3ba3207ce233d54d720d7',1,'Solve']]],
+  ['richardson',['Richardson',['../class_richardson.html',1,'Richardson'],['../class_richardson.html#ab669d2d69be9d899d5ca2bb7a7c33a5b',1,'Richardson::Richardson()']]],
+  ['richardson_2ecpp',['richardson.cpp',['../richardson_8cpp.html',1,'']]],
+  ['richardson_2eh',['richardson.h',['../richardson_8h.html',1,'']]]
 ];

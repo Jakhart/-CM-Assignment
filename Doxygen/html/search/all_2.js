@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['diagonalization',['Diagonalization',['../class_implicit.html#a572fff2232977c83c432f993f37a7853',1,'Implicit']]],
-  ['dufortfrankel',['DuFortFrankel',['../class_du_fort_frankel.html',1,'DuFortFrankel'],['../class_du_fort_frankel.html#ab9a6490d0fd3b08e7e22fba2ade16c19',1,'DuFortFrankel::DuFortFrankel()']]]
+  ['cranknicholson',['CrankNicholson',['../class_crank_nicholson.html',1,'CrankNicholson'],['../class_crank_nicholson.html#a77c284d244c4c0aabcd2b7d35efc356e',1,'CrankNicholson::CrankNicholson()']]],
+  ['cranknicholson_2ecpp',['crankNicholson.cpp',['../crank_nicholson_8cpp.html',1,'']]],
+  ['cranknicholson_2eh',['crankNicholson.h',['../crank_nicholson_8h.html',1,'']]]
 ];
