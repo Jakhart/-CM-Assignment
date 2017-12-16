@@ -1,0 +1,120 @@
+\hypertarget{class_explicit}{}\section{Explicit Class Reference}
+\label{class_explicit}\index{Explicit@{Explicit}}
+
+
+{\ttfamily \#include $<$explicit.\+h$>$}
+
+Inheritance diagram for Explicit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_explicit}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_explicit_a7534f9c32911234d06bec7f47ad7596e}{Explicit} ()
+\item 
+\hyperlink{class_explicit_ab5b890fae2ea8a91c95e9a15f552f36a}{Explicit} (double \hyperlink{class_solve_ab6b73352e9bca73bad1b133fc84f008c}{D}, double \hyperlink{class_solve_a324c747af91a26a206d7772853b8655e}{Tin}, double \hyperlink{class_solve_a7145536b49fb1ac4d2f36f800d118616}{Tsun}, double \hyperlink{class_solve_ac1befb9c006f895fb0517e19c412ca57}{dt}, double \hyperlink{class_solve_a21b9b8118f508e079f066d2ce2816dd1}{dx})
+\item 
+void \hyperlink{class_explicit_ac99aa17bfd95f66b33e5c0ecf0e53785}{solve} (double t)
+\item 
+void \hyperlink{class_explicit_a6069720017eb2bb0d989b2557c162c97}{Order\+One} (\hyperlink{class_vector}{Vector} \&\hyperlink{class_explicit_ae53d46a9f687aa478f8641a86f9e8555}{T})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector}{Vector} \hyperlink{class_explicit_a901bd7294da6e25d9b3c8851653c37dc}{Tpast}
+\item 
+\hyperlink{class_vector}{Vector} \hyperlink{class_explicit_ae53d46a9f687aa478f8641a86f9e8555}{T}
+\item 
+\hyperlink{class_vector}{Vector} \hyperlink{class_explicit_ac8dbd124708dde54d99dfe2fc9b4851a}{Tnext}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is derived from the \hyperlink{class_solve}{Solve} class and is the base class of the two explicit scheme Class, \hyperlink{class_du_fort_frankel}{Du\+Fort\+Frankel} and \hyperlink{class_richardson}{Richardson}.
+
+The \hyperlink{class_explicit}{Explicit} class provides\+: ~\newline
+-\/basic constructor derived from \hyperlink{class_solve}{Solve} ~\newline
+-\/a virtual function \hyperlink{class_explicit_ac99aa17bfd95f66b33e5c0ecf0e53785}{solve()} that will be use in the derived function to solve the problem ~\newline
+-\/a \begin{DoxySeeAlso}{See also}
+Ordern\+One(\+Vector \&\+T) function that will be used in both derived class to calculate the first term needed to apply the schemes 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_explicit_a7534f9c32911234d06bec7f47ad7596e}\label{class_explicit_a7534f9c32911234d06bec7f47ad7596e}} 
+\index{Explicit@{Explicit}!Explicit@{Explicit}}
+\index{Explicit@{Explicit}!Explicit@{Explicit}}
+\subsubsection{\texorpdfstring{Explicit()}{Explicit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Explicit\+::\+Explicit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor. Set all the value expect n to 0 \begin{DoxySeeAlso}{See also}
+\hyperlink{class_solve_ac437f1307c9d4669205ac7d370a55ffc}{Solve()} 
+
+\hyperlink{class_explicit_ab5b890fae2ea8a91c95e9a15f552f36a}{Explicit(double D, double Tin, double Tsun, double dt, double dx)}
+\end{DoxySeeAlso}
+Default constructor -\/ Same as the Solver constructor set all the ele;ents to one \mbox{\Hypertarget{class_explicit_ab5b890fae2ea8a91c95e9a15f552f36a}\label{class_explicit_ab5b890fae2ea8a91c95e9a15f552f36a}} 
+\index{Explicit@{Explicit}!Explicit@{Explicit}}
+\index{Explicit@{Explicit}!Explicit@{Explicit}}
+\subsubsection{\texorpdfstring{Explicit()}{Explicit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Explicit\+::\+Explicit (\begin{DoxyParamCaption}\item[{double}]{D,  }\item[{double}]{Tin,  }\item[{double}]{Tsun,  }\item[{double}]{dt,  }\item[{double}]{dx }\end{DoxyParamCaption})}
+
+Based on the \hyperlink{class_solve}{Solve} constructor \begin{DoxySeeAlso}{See also}
+\hyperlink{class_solve_a1e0efad6dcf6b09759dd38df7aa08db8}{Solve(double D, double Tin, double Tsun, double dt, double dx)}
+\end{DoxySeeAlso}
+Same as the Solver constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_explicit_a6069720017eb2bb0d989b2557c162c97}\label{class_explicit_a6069720017eb2bb0d989b2557c162c97}} 
+\index{Explicit@{Explicit}!Order\+One@{Order\+One}}
+\index{Order\+One@{Order\+One}!Explicit@{Explicit}}
+\subsubsection{\texorpdfstring{Order\+One()}{OrderOne()}}
+{\footnotesize\ttfamily void Explicit\+::\+Order\+One (\begin{DoxyParamCaption}\item[{\hyperlink{class_vector}{Vector} \&}]{T }\end{DoxyParamCaption})}
+
+Void method that will change the value of the \hyperlink{class_vector}{Vector} T and calculate the first scheme with a forward time central space scheme
+
+Void methods that initialize T at t=0 and calculate T at t = dt \mbox{\Hypertarget{class_explicit_ac99aa17bfd95f66b33e5c0ecf0e53785}\label{class_explicit_ac99aa17bfd95f66b33e5c0ecf0e53785}} 
+\index{Explicit@{Explicit}!solve@{solve}}
+\index{solve@{solve}!Explicit@{Explicit}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void Explicit\+::solve (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual methods that solve the problem for each scheme depending in which class the objet is define and print it in the consol.  the \hyperlink{class_explicit}{Explicit} class it doesn\textquotesingle{}t do anything
+
+Virtual method -\/ Not defined here 
+
+Reimplemented from \hyperlink{class_solve_a1a56722993fdabea9928637d7dd8a2c7}{Solve}.
+
+
+
+Reimplemented in \hyperlink{class_richardson_ab8dd2ff0e58c11092fead4d45a4f5c64}{Richardson}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_explicit_ae53d46a9f687aa478f8641a86f9e8555}\label{class_explicit_ae53d46a9f687aa478f8641a86f9e8555}} 
+\index{Explicit@{Explicit}!T@{T}}
+\index{T@{T}!Explicit@{Explicit}}
+\subsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily \hyperlink{class_vector}{Vector} Explicit\+::T}
+
+\mbox{\Hypertarget{class_explicit_ac8dbd124708dde54d99dfe2fc9b4851a}\label{class_explicit_ac8dbd124708dde54d99dfe2fc9b4851a}} 
+\index{Explicit@{Explicit}!Tnext@{Tnext}}
+\index{Tnext@{Tnext}!Explicit@{Explicit}}
+\subsubsection{\texorpdfstring{Tnext}{Tnext}}
+{\footnotesize\ttfamily \hyperlink{class_vector}{Vector} Explicit\+::\+Tnext}
+
+\mbox{\Hypertarget{class_explicit_a901bd7294da6e25d9b3c8851653c37dc}\label{class_explicit_a901bd7294da6e25d9b3c8851653c37dc}} 
+\index{Explicit@{Explicit}!Tpast@{Tpast}}
+\index{Tpast@{Tpast}!Explicit@{Explicit}}
+\subsubsection{\texorpdfstring{Tpast}{Tpast}}
+{\footnotesize\ttfamily \hyperlink{class_vector}{Vector} Explicit\+::\+Tpast}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Solver/\+Explicit/\hyperlink{explicit_8h}{explicit.\+h}\item 
+Solver/\+Explicit/\hyperlink{explicit_8cpp}{explicit.\+cpp}\end{DoxyCompactItemize}

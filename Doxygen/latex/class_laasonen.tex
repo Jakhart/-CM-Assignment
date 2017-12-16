@@ -1,0 +1,65 @@
+\hypertarget{class_laasonen}{}\section{Laasonen Class Reference}
+\label{class_laasonen}\index{Laasonen@{Laasonen}}
+
+
+{\ttfamily \#include $<$laasonen.\+h$>$}
+
+Inheritance diagram for Laasonen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_laasonen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_laasonen_ad20d5e371558ef7c4f04f730daef0049}{Laasonen} (double \hyperlink{class_solve_ab6b73352e9bca73bad1b133fc84f008c}{D}, double \hyperlink{class_solve_a324c747af91a26a206d7772853b8655e}{Tin}, double \hyperlink{class_solve_a7145536b49fb1ac4d2f36f800d118616}{Tsun}, double \hyperlink{class_solve_ac1befb9c006f895fb0517e19c412ca57}{dt}, double \hyperlink{class_solve_a21b9b8118f508e079f066d2ce2816dd1}{dx})
+\item 
+void \hyperlink{class_laasonen_aaa49ab7d15fbfef94a57a0e89977d1c6}{solve} (double t)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+It\textquotesingle{}s a class designed to solved the problem with the \hyperlink{class_laasonen}{Laasonen} method It\textquotesingle{}s derived from the \hyperlink{class_implicit}{Implicit} class The \hyperlink{class_laasonen}{Laasonen} class provides\+: ~\newline
+-\/basic constructor based on the \hyperlink{class_solve}{Solve} class constructor ~\newline
+-\/a virtual solve function that solve the problem with the \hyperlink{class_laasonen}{Laasonen} scheme 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_laasonen_ad20d5e371558ef7c4f04f730daef0049}\label{class_laasonen_ad20d5e371558ef7c4f04f730daef0049}} 
+\index{Laasonen@{Laasonen}!Laasonen@{Laasonen}}
+\index{Laasonen@{Laasonen}!Laasonen@{Laasonen}}
+\subsubsection{\texorpdfstring{Laasonen()}{Laasonen()}}
+{\footnotesize\ttfamily Laasonen\+::\+Laasonen (\begin{DoxyParamCaption}\item[{double}]{D,  }\item[{double}]{Tin,  }\item[{double}]{Tsun,  }\item[{double}]{dt,  }\item[{double}]{dx }\end{DoxyParamCaption})}
+
+Default constructor. Based on the \hyperlink{class_solve}{Solve} constructor and implicit constuctor \begin{DoxySeeAlso}{See also}
+\hyperlink{class_solve_a1e0efad6dcf6b09759dd38df7aa08db8}{Solve(double D, double Tin, double Tsun, double dt, double dx)} 
+
+\hyperlink{class_implicit_afe5ef51232ab8925009f584c679bdfce}{Implicit(double D, double Tin, double Tsun, double dt, double dx)}
+\end{DoxySeeAlso}
+Default constructor -\/ Based on the Solver and \hyperlink{class_implicit}{Implicit} constructor We implement the value of a and b use in the \hyperlink{class_implicit}{Implicit} class \begin{DoxySeeAlso}{See also}
+\hyperlink{class_implicit_a572fff2232977c83c432f993f37a7853}{Diagonalization(\+Vector \&\+T)} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_laasonen_aaa49ab7d15fbfef94a57a0e89977d1c6}\label{class_laasonen_aaa49ab7d15fbfef94a57a0e89977d1c6}} 
+\index{Laasonen@{Laasonen}!solve@{solve}}
+\index{solve@{solve}!Laasonen@{Laasonen}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void Laasonen\+::solve (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual methods that solve the problem for each scheme depending in which class the objet is define and print the result in the consol. ~\newline
+ \hyperlink{class_solve}{Solve} the problem using the \hyperlink{class_laasonen}{Laasonen} scheme \begin{DoxySeeAlso}{See also}
+\hyperlink{class_implicit_a572fff2232977c83c432f993f37a7853}{Diagonalization(\+Vector \&\+T)}
+\end{DoxySeeAlso}
+Virtual method -\/ \hyperlink{class_solve}{Solve} the problem with the \hyperlink{class_laasonen}{Laasonen} scheme 
+
+Reimplemented from \hyperlink{class_implicit_a027adb4276376991f75fcffbd34740b3}{Implicit}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Solver/\+Implicit/\+Laasonen/\hyperlink{laasonen_8h}{laasonen.\+h}\item 
+Solver/\+Implicit/\+Laasonen/\hyperlink{laasonen_8cpp}{laasonen.\+cpp}\end{DoxyCompactItemize}

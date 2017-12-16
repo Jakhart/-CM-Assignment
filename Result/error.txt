@@ -1,0 +1,48 @@
+***********************
+Error Values for t =0.1
+DuFort Frankel Absolute Error: 62.0554,  Relative Error: 0.0192417
+Richardson Absolute Error: 2.29784e+006, Relative Error: 0.999856
+Laasonen Absolute Error: 43.3021, Relative Error: 0.0135053
+Crank-Nicholson Absolute Error: 54.182, Relative Error: 0.0168415
+***********************
+Error Values for t =0.2
+DuFort Frankel Absolute Error: 44.7815,  Relative Error: 0.0124646
+Richardson Absolute Error: 4.42919e+011, Relative Error: 1
+Laasonen Absolute Error: 30.9583, Relative Error: 0.00865032
+Crank-Nicholson Absolute Error: 38.8173, Relative Error: 0.0108225
+***********************
+Error Values for t = 0.3
+DuFort Frankel Absolute Error: 37.0626,  Relative Error: 0.00956036
+Richardson Absolute Error: 9.68826e+016, Relative Error: 1
+Laasonen Absolute Error: 25.5142, Relative Error: 0.0066011
+Crank-Nicholson Absolute Error: 32.0381, Relative Error: 0.008275
+***********************
+Error Values for t = 0.4
+DuFort Frankel Absolute Error: 32.4079,  Relative Error: 0.00787275
+Richardson Absolute Error: 2.23808e+022, Relative Error: 1
+Laasonen Absolute Error: 21.9471, Relative Error: 0.00534511
+Crank-Nicholson Absolute Error: 27.8349, Relative Error: 0.00676935
+***********************
+Error Values for t = 0.5
+DuFort Frankel Absolute Error: 29.1255,  Relative Error: 0.00673151
+Richardson Absolute Error: 5.32986e+027, Relative Error: 1
+Laasonen Absolute Error: 19.0404, Relative Error: 0.00441092
+Crank-Nicholson Absolute Error: 24.696, Relative Error: 0.00571362
+
+Error Values for t = 1
+DuFort Frankel Absolute Error: 19.05,  Relative Error: 0.00373623
+Richardson Absolute Error: 4.91615e+054, Relative Error: 1
+Laasonen Absolute Error: 8.51601, Relative Error: 0.00167368
+Crank-Nicholson Absolute Error: 14.3755, Relative Error: 0.00282202
+
+Error Values for t = 2
+DuFort Frankel Absolute Error: 8.38584,  Relative Error: 0.00143271
+Richardson Absolute Error: 5.02234e+108, Relative Error: 1
+Laasonen Absolute Error: 0.536662, Relative Error: 9.18112e-005
+Crank-Nicholson Absolute Error: 4.90526, Relative Error: 0.000838557
+
+Error Values for t = 10
+DuFort Frankel Absolute Error: 0.00695182,  Relative Error: 1.10349e-006
+Richardson Absolute Error: inf, Relative Error: nan
+Laasonen Absolute Error: 0.00797042, Relative Error: 1.26518e-006
+Crank-Nicholson Absolute Error: 0.000457142, Relative Error: 7.25642e-008

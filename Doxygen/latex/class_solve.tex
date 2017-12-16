@@ -1,0 +1,242 @@
+\hypertarget{class_solve}{}\section{Solve Class Reference}
+\label{class_solve}\index{Solve@{Solve}}
+
+
+{\ttfamily \#include $<$solve.\+h$>$}
+
+Inheritance diagram for Solve\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_solve}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_solve_ac437f1307c9d4669205ac7d370a55ffc}{Solve} ()
+\item 
+\hyperlink{class_solve_a1e0efad6dcf6b09759dd38df7aa08db8}{Solve} (double \hyperlink{class_solve_ab6b73352e9bca73bad1b133fc84f008c}{D}, double \hyperlink{class_solve_a324c747af91a26a206d7772853b8655e}{Tin}, double \hyperlink{class_solve_a7145536b49fb1ac4d2f36f800d118616}{Tsun}, double \hyperlink{class_solve_ac1befb9c006f895fb0517e19c412ca57}{dt}, double \hyperlink{class_solve_a21b9b8118f508e079f066d2ce2816dd1}{dx})
+\item 
+virtual void \hyperlink{class_solve_a1a56722993fdabea9928637d7dd8a2c7}{solve} (double t)
+\item 
+double \hyperlink{class_solve_a0edcf69bae8414576fbb1b35ba395a1c}{getD} ()
+\item 
+void \hyperlink{class_solve_ab313553673e1e419bcc150be13d3d58b}{setD} (double \hyperlink{class_solve_ab6b73352e9bca73bad1b133fc84f008c}{D})
+\item 
+double \hyperlink{class_solve_a7d9d481ed1bf8bbfc5bf37517e2a12c6}{get\+Tin} ()
+\item 
+void \hyperlink{class_solve_acef277ebf827a664b4378285a1fbeca3}{set\+Tin} (double \hyperlink{class_solve_a324c747af91a26a206d7772853b8655e}{Tin})
+\item 
+double \hyperlink{class_solve_afad3694fc830b80135a316eea2c0c279}{get\+Tsun} ()
+\item 
+void \hyperlink{class_solve_a2088840c7117930845bc61444cbba285}{set\+Tsun} (double \hyperlink{class_solve_a7145536b49fb1ac4d2f36f800d118616}{Tsun})
+\item 
+double \hyperlink{class_solve_a981e11c3c390bc54041a8e60ebdcc4bf}{getdt} ()
+\item 
+void \hyperlink{class_solve_af05556226469b3b7d4773b61342fbf73}{setdt} (double \hyperlink{class_solve_ac1befb9c006f895fb0517e19c412ca57}{dt})
+\item 
+double \hyperlink{class_solve_aad066a37070623f3c1bfb5f001fd2a50}{getdx} ()
+\item 
+void \hyperlink{class_solve_a60a27ba683584477189dc9c260c75127}{setdx} (double \hyperlink{class_solve_a21b9b8118f508e079f066d2ce2816dd1}{dx})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_solve_ab6b73352e9bca73bad1b133fc84f008c}{D}
+\item 
+double \hyperlink{class_solve_a324c747af91a26a206d7772853b8655e}{Tin}
+\item 
+double \hyperlink{class_solve_a7145536b49fb1ac4d2f36f800d118616}{Tsun}
+\item 
+double \hyperlink{class_solve_ac1befb9c006f895fb0517e19c412ca57}{dt}
+\item 
+double \hyperlink{class_solve_a21b9b8118f508e079f066d2ce2816dd1}{dx}
+\item 
+double \hyperlink{class_solve_a8007aa7266c3ba3207ce233d54d720d7}{r}
+\item 
+int \hyperlink{class_solve_acc2a34441a699bf1e68f730a1bbe7774}{n}
+\item 
+int \hyperlink{class_solve_a95de020d455d886e667b8307d7efed55}{L}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+It\textquotesingle{}s the main base classes of the program ~\newline
+ It implements the data needed to solve the problem with each method ~\newline
+ In those date we can find\+: ~\newline
+-\/D the diffusity in ft$^\wedge$2/hr ~\newline
+-\/\+Tin The initial temperature ~\newline
+-\/\+Tsun The temperature of of the two surfaces of the wall at x0 and xn ~\newline
+-\/dt The gap in time between n and n+1 ~\newline
+-\/dx The gap in space between i and i+1
+
+The \hyperlink{class_solve}{Solve} class provides\+: ~\newline
+-\/basic constructor that will be reused in all derivated class ~\newline
+-\/set and get function for each variable set by the user ~\newline
+-\/a virtual function \hyperlink{class_solve_a1a56722993fdabea9928637d7dd8a2c7}{solve()} that will be use in the derived function to solve the problem 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_solve_ac437f1307c9d4669205ac7d370a55ffc}\label{class_solve_ac437f1307c9d4669205ac7d370a55ffc}} 
+\index{Solve@{Solve}!Solve@{Solve}}
+\index{Solve@{Solve}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{Solve()}{Solve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Solve\+::\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor. Initialize a \hyperlink{class_solve}{Solve} element with the needed element set to 1 \begin{DoxySeeAlso}{See also}
+\hyperlink{class_solve_a1e0efad6dcf6b09759dd38df7aa08db8}{Solve(double D, double Tin, double Tsun, double dt, double dx)}
+\end{DoxySeeAlso}
+Default constructor -\/ Set all the value to 1 \mbox{\Hypertarget{class_solve_a1e0efad6dcf6b09759dd38df7aa08db8}\label{class_solve_a1e0efad6dcf6b09759dd38df7aa08db8}} 
+\index{Solve@{Solve}!Solve@{Solve}}
+\index{Solve@{Solve}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{Solve()}{Solve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Solve\+::\+Solve (\begin{DoxyParamCaption}\item[{double}]{D,  }\item[{double}]{Tin,  }\item[{double}]{Tsun,  }\item[{double}]{dt,  }\item[{double}]{dx }\end{DoxyParamCaption})}
+
+Initialize a \hyperlink{class_solve}{Solve} element with the needed element to solve the problem
+
+Default constructor -\/  the value of D, Tin, Tsun, dt, dx and L and create r and n which are to simplified calculation in the derived classes. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solve_a0edcf69bae8414576fbb1b35ba395a1c}\label{class_solve_a0edcf69bae8414576fbb1b35ba395a1c}} 
+\index{Solve@{Solve}!getD@{getD}}
+\index{getD@{getD}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{get\+D()}{getD()}}
+{\footnotesize\ttfamily double Solve\+::getD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Normal get method that returns double, the number D \begin{DoxyReturn}{Returns}
+double. The value of D 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_solve_a981e11c3c390bc54041a8e60ebdcc4bf}\label{class_solve_a981e11c3c390bc54041a8e60ebdcc4bf}} 
+\index{Solve@{Solve}!getdt@{getdt}}
+\index{getdt@{getdt}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{getdt()}{getdt()}}
+{\footnotesize\ttfamily double Solve\+::getdt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Normal get method that returns double, the number dt \begin{DoxyReturn}{Returns}
+double. The value of dt 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_solve_aad066a37070623f3c1bfb5f001fd2a50}\label{class_solve_aad066a37070623f3c1bfb5f001fd2a50}} 
+\index{Solve@{Solve}!getdx@{getdx}}
+\index{getdx@{getdx}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{getdx()}{getdx()}}
+{\footnotesize\ttfamily double Solve\+::getdx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Normal get method that returns double, the number dt \begin{DoxyReturn}{Returns}
+double. The value of dx 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_solve_a7d9d481ed1bf8bbfc5bf37517e2a12c6}\label{class_solve_a7d9d481ed1bf8bbfc5bf37517e2a12c6}} 
+\index{Solve@{Solve}!get\+Tin@{get\+Tin}}
+\index{get\+Tin@{get\+Tin}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{get\+Tin()}{getTin()}}
+{\footnotesize\ttfamily double Solve\+::get\+Tin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Normal get method that returns double, the number Tin \begin{DoxyReturn}{Returns}
+double. The value of Tin 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_solve_afad3694fc830b80135a316eea2c0c279}\label{class_solve_afad3694fc830b80135a316eea2c0c279}} 
+\index{Solve@{Solve}!get\+Tsun@{get\+Tsun}}
+\index{get\+Tsun@{get\+Tsun}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{get\+Tsun()}{getTsun()}}
+{\footnotesize\ttfamily double Solve\+::get\+Tsun (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Normal get method that returns double, the number Tsun \begin{DoxyReturn}{Returns}
+double. The value of Tsun 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_solve_ab313553673e1e419bcc150be13d3d58b}\label{class_solve_ab313553673e1e419bcc150be13d3d58b}} 
+\index{Solve@{Solve}!setD@{setD}}
+\index{setD@{setD}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{set\+D()}{setD()}}
+{\footnotesize\ttfamily void Solve\+::setD (\begin{DoxyParamCaption}\item[{double}]{D }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_solve_af05556226469b3b7d4773b61342fbf73}\label{class_solve_af05556226469b3b7d4773b61342fbf73}} 
+\index{Solve@{Solve}!setdt@{setdt}}
+\index{setdt@{setdt}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{setdt()}{setdt()}}
+{\footnotesize\ttfamily void Solve\+::setdt (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+Normal set method that set the value of the number dt \mbox{\Hypertarget{class_solve_a60a27ba683584477189dc9c260c75127}\label{class_solve_a60a27ba683584477189dc9c260c75127}} 
+\index{Solve@{Solve}!setdx@{setdx}}
+\index{setdx@{setdx}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{setdx()}{setdx()}}
+{\footnotesize\ttfamily void Solve\+::setdx (\begin{DoxyParamCaption}\item[{double}]{dx }\end{DoxyParamCaption})}
+
+Normal set method that set the value of the number dx \mbox{\Hypertarget{class_solve_acef277ebf827a664b4378285a1fbeca3}\label{class_solve_acef277ebf827a664b4378285a1fbeca3}} 
+\index{Solve@{Solve}!set\+Tin@{set\+Tin}}
+\index{set\+Tin@{set\+Tin}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{set\+Tin()}{setTin()}}
+{\footnotesize\ttfamily void Solve\+::set\+Tin (\begin{DoxyParamCaption}\item[{double}]{Tin }\end{DoxyParamCaption})}
+
+Normal set method that set the value of the number Tsun \mbox{\Hypertarget{class_solve_a2088840c7117930845bc61444cbba285}\label{class_solve_a2088840c7117930845bc61444cbba285}} 
+\index{Solve@{Solve}!set\+Tsun@{set\+Tsun}}
+\index{set\+Tsun@{set\+Tsun}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{set\+Tsun()}{setTsun()}}
+{\footnotesize\ttfamily void Solve\+::set\+Tsun (\begin{DoxyParamCaption}\item[{double}]{Tsun }\end{DoxyParamCaption})}
+
+Normal set method that set the value of the number Tin \mbox{\Hypertarget{class_solve_a1a56722993fdabea9928637d7dd8a2c7}\label{class_solve_a1a56722993fdabea9928637d7dd8a2c7}} 
+\index{Solve@{Solve}!solve@{solve}}
+\index{solve@{solve}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void Solve\+::solve (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual methods that solve the problem for each scheme depending in which class the objet is define and print it in the consol.  the solve class it doesn\textquotesingle{}t do anything
+
+Virtual method -\/ Not defined here 
+
+Reimplemented in \hyperlink{class_implicit_a027adb4276376991f75fcffbd34740b3}{Implicit}, \hyperlink{class_explicit_ac99aa17bfd95f66b33e5c0ecf0e53785}{Explicit}, \hyperlink{class_analytical_a8fe1d5769bb516115a31719222eb9ae5}{Analytical}, \hyperlink{class_laasonen_aaa49ab7d15fbfef94a57a0e89977d1c6}{Laasonen}, \hyperlink{class_du_fort_frankel_a73204223c7ace1e3f95e5d89d02c5208}{Du\+Fort\+Frankel}, \hyperlink{class_richardson_ab8dd2ff0e58c11092fead4d45a4f5c64}{Richardson}, and \hyperlink{class_crank_nicholson_a999d04c6ef97b0794f66584f9192dbee}{Crank\+Nicholson}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_solve_ab6b73352e9bca73bad1b133fc84f008c}\label{class_solve_ab6b73352e9bca73bad1b133fc84f008c}} 
+\index{Solve@{Solve}!D@{D}}
+\index{D@{D}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{D}{D}}
+{\footnotesize\ttfamily double Solve\+::D}
+
+\mbox{\Hypertarget{class_solve_ac1befb9c006f895fb0517e19c412ca57}\label{class_solve_ac1befb9c006f895fb0517e19c412ca57}} 
+\index{Solve@{Solve}!dt@{dt}}
+\index{dt@{dt}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{dt}{dt}}
+{\footnotesize\ttfamily double Solve\+::dt}
+
+\mbox{\Hypertarget{class_solve_a21b9b8118f508e079f066d2ce2816dd1}\label{class_solve_a21b9b8118f508e079f066d2ce2816dd1}} 
+\index{Solve@{Solve}!dx@{dx}}
+\index{dx@{dx}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{dx}{dx}}
+{\footnotesize\ttfamily double Solve\+::dx}
+
+\mbox{\Hypertarget{class_solve_a95de020d455d886e667b8307d7efed55}\label{class_solve_a95de020d455d886e667b8307d7efed55}} 
+\index{Solve@{Solve}!L@{L}}
+\index{L@{L}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily int Solve\+::L}
+
+\mbox{\Hypertarget{class_solve_acc2a34441a699bf1e68f730a1bbe7774}\label{class_solve_acc2a34441a699bf1e68f730a1bbe7774}} 
+\index{Solve@{Solve}!n@{n}}
+\index{n@{n}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily int Solve\+::n}
+
+\mbox{\Hypertarget{class_solve_a8007aa7266c3ba3207ce233d54d720d7}\label{class_solve_a8007aa7266c3ba3207ce233d54d720d7}} 
+\index{Solve@{Solve}!r@{r}}
+\index{r@{r}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily double Solve\+::r}
+
+\mbox{\Hypertarget{class_solve_a324c747af91a26a206d7772853b8655e}\label{class_solve_a324c747af91a26a206d7772853b8655e}} 
+\index{Solve@{Solve}!Tin@{Tin}}
+\index{Tin@{Tin}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{Tin}{Tin}}
+{\footnotesize\ttfamily double Solve\+::\+Tin}
+
+\mbox{\Hypertarget{class_solve_a7145536b49fb1ac4d2f36f800d118616}\label{class_solve_a7145536b49fb1ac4d2f36f800d118616}} 
+\index{Solve@{Solve}!Tsun@{Tsun}}
+\index{Tsun@{Tsun}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{Tsun}{Tsun}}
+{\footnotesize\ttfamily double Solve\+::\+Tsun}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Solver/\hyperlink{solve_8h}{solve.\+h}\item 
+Solver/\hyperlink{solve_8cpp}{solve.\+cpp}\end{DoxyCompactItemize}
